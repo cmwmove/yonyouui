@@ -61,6 +61,7 @@ export default {
 </script>
 
 <style>
+
 .gLeftNav{
     border-bottom: 1px solid #DDDDDD;
     display: inline-block;

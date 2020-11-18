@@ -3,19 +3,12 @@
         <div class="header-right">
             <img src="../assets/img/logo@2x.png" alt="">
         </div>
-        <!-- <ul class="header-left">
-            <li id="headerLeft-title" class="active">指南</li>
-            <li id="headerLeft-title">组件</li>
-            <li id="headerLeft-title">资源</li>
-            <li id="headerLeft-title">财政<a-icon type="down" /></li>
-            <li id="headerLeft-title">规范2.0<a-icon type="down" /></li>
-            <li id="headerLeft-color"><div class="colorBox"></div></li>
-        </ul> -->
         <ul class="header-left">
             <li class="headerLeft-title"  v-for="(item,index) in items" v-on:click="addClass(index)" @click="$router.push({ path: item.path })" v-bind:class="{ active:index==current}">{{item.title}}</li>
+            <li class="headerLeft-titleR">财政<i class="iconfont iconxia"></i></li>
             <li class="headerLeft-titleR">
                 <a-dropdown :trigger="['click']">
-                    <a class="ant-dropdown-link" @click="e => e.preventDefault()">规范2.0<a-icon type="down" /></a>
+                    <a class="ant-dropdown-link" @click="e => e.preventDefault()">规范2.0<i class="iconfont iconxia"></i></a>
                     <a-menu slot="overlay">
                         <a-menu-item key="0">
                             <a>规范1.0</a>
@@ -28,6 +21,7 @@
             </li>
             <li id="headerLeft-color"><div class="colorBox"></div></li>
         </ul>
+
     </div>
 </template>
 
@@ -35,12 +29,12 @@
 export default {
     data() {
         return {
-            current:0,
+            current:1,
             current2:"",
             items:[
                 {title:'指南',path:'/'},
-                {title:'组件',path:'/ModulePage'},
-                {title:'资源',path:'/ModulePage'},
+                {title:'组件',path:'/Letter'},
+                {title:'资源',path:'/Resource'},
             ],
         };
     },
@@ -76,14 +70,13 @@ export default {
             cursor: pointer;
         }
         .headerLeft-title{
-            // width: 76px;
             padding: 0 21px;
             height: 76px;
             margin: 0 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 22px;  
+            font-size: 18px;  
         }
         .headerLeft-titleR{
             padding: 0 21px;
@@ -92,15 +85,13 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 22px;
+            font-size: 18px;
 
             .anticon{
                 margin-left: 10px;
             }
-
             .ant-dropdown-link{
-                font-size: 22px;
-                color: #333333;
+                font-size: 18px;
             }
         }
         #headerLeft-color{
@@ -112,7 +103,6 @@ export default {
             height: 24px;
             width: 24px;
             border-radius: 4px;
-            // border: 1px solid #DDDDDD;
             border: 4px solid #F0F2F5;
             margin: 0 10px;
             background-color: #CC0000;

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <HeaderModule></HeaderModule>
+    <HeaderGuide></HeaderGuide>
     <GuideLeftNav></GuideLeftNav>
   </div>
 </template>
@@ -8,12 +8,12 @@
 <script>
 import { Icon } from "ant-design-vue";
 
-import HeaderModule from '@/components/headerModule.vue'
+import HeaderGuide from '@/components/headerGuide.vue'
 import GuideLeftNav from '@/components/guideLeftNav.vue'
 export default {
   name: 'guide',
   components: {
-    HeaderModule,
+    HeaderGuide,
     GuideLeftNav
   }
 }
