@@ -108,7 +108,7 @@
                         <div>
                             <div class="sizeButtonBox-sizeTitle">标准按钮</div>
                             <div class="sizeBox"><a-button type="primary">标准按钮</a-button></div>
-                            <div class="sizeBox"> <a-button type="primary" ghost>标准按钮</a-button></div>
+                            <div class="sizeBox"><a-button type="primary" ghost>标准按钮</a-button></div>
                             <div class="sizeBox"><a-button>标准按钮</a-button></div>
                         </div>
                         <div>
@@ -150,7 +150,7 @@
             </div>
         </div>
 
-        <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2"></Changes>
+        <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2" :number="number"></Changes>
 
     </div>
 </template>
@@ -163,7 +163,8 @@ export default {
             title1 : '文字',
             title2 : '图标',
             path1 : '/Letter',
-            path2 : '/Icon'
+            path2 : '/Icon',
+            number : 2
         }
     },
     components:{
@@ -186,12 +187,12 @@ export default {
 
 
 
-.Box{
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: 1px solid #DDDDDD;
-}
+// .Box{
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     border: 1px solid #DDDDDD;
+// }
 
 .buttonBoxFirst{
     margin-top: 20px;

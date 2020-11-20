@@ -1288,7 +1288,11 @@
 
             </ul>
         </div>
-        <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2"></Changes>
+        <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2" :number="number" @child-event='parentEvent'></Changes>
+        <!-- <ul class="change">
+            <li class="changeLi" @click="leftClick"> <span><i class="iconfont iconzuo" ></i>{{this.title1}}</span> </li>
+            <li class="changeLi" @click="rightClick"><span>{{this.title2}} <i class="iconfont iconyou"></i></span> </li>
+        </ul> -->
     </div>
 </template>
 
@@ -1300,15 +1304,38 @@ export default {
             title1 : '按钮',
             title2 : '面包屑',
             path1 : '/MoButton',
-            path2 : '/Breadcrumb'
+            path2 : '/Breadcrumb',
+            number: 3,
+            NavNumber:''
         }
     },
     components:{
         Changes
     },
+    methods:{
+        parentEvent(number){
+            this.NavNumber = number
+            // console.log(this.NavNumber)
+            this.$emit('child-eventT',this.NavNumber)
+        }
+        // leftClick(){
+        //     this.$router.push(this.path1),
+        //     this.numbers = this.number - 1
+        //     // console.log(this.numbers)
+        //     this.$emit('child-event',this.numbers)
+        // },
+        // rightClick(){
+        //     this.$router.push(this.path2)
+        //     this.numbers = this.number + 1
+        //     // console.log(this.numbers)
+        //     this.$emit('child-event',this.numbers)
+        // }
+    }
 }
 </script>
 
 <style>
-
+.changeLi :hover{
+    color: #0066ff;
+}
 </style>

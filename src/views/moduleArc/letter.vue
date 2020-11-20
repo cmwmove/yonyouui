@@ -257,8 +257,8 @@
                 <p>◆ 正文文字：<br>
                 文字大小：14px   阿里巴巴普惠体Regular；文字颜色：#333333。示例：<span class="Alibaba-R">用友政务</span></p>
             </div>
-            <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2"></Changes>
         </div>
+        <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2" :number="number"></Changes>
     </div>
 </template>
 
@@ -270,7 +270,8 @@ export default {
             title1 : '文字',
             title2 : '按钮',
             path1 : '/Letter',
-            path2 : '/Mobutton'
+            path2 : '/Mobutton',
+            number : 1
         }
     },
     components:{

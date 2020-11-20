@@ -2,7 +2,7 @@
   <div class="home">
     <HeaderModule></HeaderModule>
     <ModuleLeftNav></ModuleLeftNav>
-    <router-view></router-view>
+    <router-view @child-event='parentEvent' :number="NamNumber"></router-view>
   </div>
 </template>
 
@@ -13,9 +13,20 @@ import ModuleLeftNav from '@/components/moduleLeftNav.vue'
 
 export default {
   name: 'modulePage',
+  data(){
+    return{
+      NamNumber:""
+    }
+  },
   components: {
     HeaderModule,
     ModuleLeftNav
+  },
+  methods:{
+    parentEvent(number){
+      this.NamNumber = number
+      console.log(this.NamNumber)
+    }
   }
 }
 </script>
