@@ -26,7 +26,7 @@ export default {
     ],
     methods:{
         leftClick(){
-            this.$router.push(this.path1),
+            this.$router.push(this.path1)
             this.numbers = this.number - 1
             console.log(this.numbers)
             this.$emit('child-event',this.numbers)

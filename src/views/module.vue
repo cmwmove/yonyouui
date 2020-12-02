@@ -2,7 +2,8 @@
   <div class="home">
     <HeaderModule></HeaderModule>
     <ModuleLeftNav></ModuleLeftNav>
-    <router-view @child-event='parentEvent' :number="NamNumber"></router-view>
+    <router-view></router-view> 
+    <!-- @child-event='parentEvent' :number="NamNumber" -->
   </div>
 </template>
 
@@ -15,7 +16,7 @@ export default {
   name: 'modulePage',
   data(){
     return{
-      NamNumber:""
+      // NamNumber:""
     }
   },
   components: {
@@ -23,10 +24,10 @@ export default {
     ModuleLeftNav
   },
   methods:{
-    parentEvent(number){
-      this.NamNumber = number
-      console.log(this.NamNumber)
-    }
+    // parentEvent(number){
+    //   this.NamNumber = number
+    //   console.log(this.NamNumber)
+    // }
   }
 }
 </script>

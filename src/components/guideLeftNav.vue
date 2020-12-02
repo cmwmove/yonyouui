@@ -1,11 +1,11 @@
 <template>
     <div class="gLeftNav">
-        <a-menu mode="inline" :open-keys="openKeys" style="width: 273px;height:1133px;" @openChange="onOpenChange">
+        <a-menu mode="inline"  :open-keys="openKeys" :selectedKeys="[$route.path]" style="width: 273px;padding-bottom:100px;" @openChange="onOpenChange">
             <a-sub-menu key="sub1">
                 <span slot="title"><span>产品设计规范简介</span></span>
-                <a-menu-item key="1">介绍</a-menu-item>
-                <a-menu-item key="2">设计价值观</a-menu-item>
-                <a-menu-item key="3">设计原则</a-menu-item>
+                <a-menu-item key="/Introduce"><router-link to="Introduce"></router-link>介绍</a-menu-item>
+                <a-menu-item key="/DesignValue"><router-link to="DesignValue"></router-link>设计价值观</a-menu-item>
+                <a-menu-item key="/DesignTenet"><router-link to="DesignTenet"></router-link>设计原则</a-menu-item>
             </a-sub-menu>
             <a-sub-menu key="sub2">
                 <span slot="title"><span>交互设计原则</span></span>

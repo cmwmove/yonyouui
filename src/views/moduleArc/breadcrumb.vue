@@ -79,6 +79,14 @@
 <script>
 import Changes from '@/components/changes.vue'
 export default {
+//     created () {
+//     document.title = '面包屑'
+//   },
+//   mounted() {
+//     axios.get('***').then((d)=>{
+//    document.title = '面包屑('+ d.Name + ')'
+//     })
+//   },
     data(){
         return{
             title1 : '图标',

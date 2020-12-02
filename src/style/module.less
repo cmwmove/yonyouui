@@ -1,0 +1,165 @@
+// 分页组件
+.pags{
+    margin-top: 12px;
+    margin-bottom: 18px;
+
+    ul{
+        display: flex;
+    }
+
+    // 标准分页
+    .allleft{
+            display: inline-block;
+            min-width: 32px;
+            height: 32px;
+            font-family: Arial;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            list-style: none;
+            background-color: #fff;
+            border: 1px solid #888888;
+            outline: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        all{
+            display: block;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #888888;
+            outline: none;
+            transition: all 0.3s;
+        }
+    }
+
+    // 标准禁止分页
+    .allleftdis{
+        display: inline-block;
+        min-width: 32px;
+        height: 32px;
+        color: #333333;
+        font-family: Arial;
+        line-height: 32px;
+        text-align: center;
+        vertical-align: middle;
+        list-style: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: 1px solid #888888;
+
+        .all{
+            display: block;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s;
+            color: #888888;
+            background: #f5f5f5;
+            cursor: not-allowed;
+        }
+    }
+    .borderRN{
+        // border-right: none;
+    }
+}
+
+// 小尺寸
+.pagsmall{
+    margin-top: 12px;
+    margin-bottom: 18px;
+
+    ul{
+        display: flex;
+    }
+
+    // 小尺寸分页
+    .allleft{
+            display: inline-block;
+            min-width: 24px;
+            height: 24px;
+            font-family: Arial;
+            line-height: 24px;
+            text-align: center;
+            vertical-align: middle;
+            list-style: none;
+            background-color: #fff;
+            border: 1px solid #888888;
+            outline: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        all{
+            display: block;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            background-color: #fff;
+            outline: none;
+            transition: all 0.3s;
+        }
+    }
+
+    // 小尺寸禁止分页
+    .allleftdis{
+        display: inline-block;
+        min-width: 24px;
+        height: 24px;
+        color: #333333;
+        font-family: Arial;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #888888;
+        list-style: none;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        .all{
+            display: block;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s;
+            color: #888888;
+            background: #f5f5f5;
+            cursor: not-allowed;
+        }
+    }
+
+    .borderRN{
+        // border-right: none;
+    }
+}
+
+// 卡片组件
+// 卡片前端方块
+.fangkuai{
+    margin-right: 10px;
+    color: #cc0000;
+}
+// 图标卡片居中
+.cardicon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc0000;
+    border-radius: 25px;
+    color: #fff;
+
+    .iconfont{
+        font-size: 38px;
+    }
+}

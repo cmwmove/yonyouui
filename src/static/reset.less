@@ -164,7 +164,14 @@
 .ant-dropdown-menu-item {
   color: @text-color;
 }
-
+// 下拉框禁止文字
+.ant-dropdown-menu-item-disabled, .ant-dropdown-menu-submenu-title-disabled{
+  color: @disabled-color;
+}
+// 下拉选择框文字居中
+.ant-select-selection-selected-value{
+  line-height: 32px;
+}
 // 下拉框选中文字背景
 .ant-dropdown-menu-item:hover {
   background-color: fade(@primary-6, 10%);
@@ -218,4 +225,106 @@
 // 左侧导航栏
 .ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
   font-size: 18px;
+}
+
+// 标准分页
+
+
+.ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next{
+  margin: 0;
+  border-radius: 0;
+}
+.ant-pagination-item{
+  margin: 0;
+  border-radius: 0;
+  // border-right: none;
+}
+.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
+  border-radius: 0;
+  // border-right: none;
+}
+
+// 分页小尺寸
+.ant-pagination.mini .ant-pagination-prev .ant-pagination-item-link, .ant-pagination.mini .ant-pagination-next .ant-pagination-item-link{
+  border: 1px solid @border-color-base;
+  // border-right: none;
+  border-radius: 0;
+}
+.ant-pagination.mini .ant-pagination-item:not(.ant-pagination-item-active){
+  border: 1px solid @border-color-base;
+  // border-right: none;
+  border-radius: 0;
+}
+.ant-pagination.mini .ant-pagination-item{
+  border-radius: 0;
+  // border-right: none;
+}
+// 分页选中时变化
+.ant-pagination-item-active{
+  // border: none;
+  background-color: @primary-color-hover;
+}
+.ant-pagination-item-active a{
+  color: @white;
+}
+.ant-pagination-item-active:focus a, .ant-pagination-item-active:hover a{
+  color: @white;
+}
+
+// 步骤条
+.ant-steps-item-description{
+  font-size: 12px;
+}
+.ant-steps-item-title{
+  font-size: 14px;
+}
+
+
+// 开关
+.ant-switch{
+  border-radius: 3px;
+}
+.ant-switch-loading-icon, .ant-switch::after{
+  border-radius: 3px;
+}
+
+// .numberform{
+
+// 输入框弹出数字框
+// .ant-popover-inner-content{
+//   background-color: #000;
+//   border-radius: 7px;
+//   padding: 0 0 5px 15px;
+//   height: 50px;
+// }
+// .ant-popover-inner-content p{
+//   font-size: 29px;
+//   color: #fff;
+//   padding: 0;
+//   margin: 0;
+//   width: 190px;
+// }
+// .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow{
+//   border-right-color: #000;
+//   border-bottom-color: #000;
+// }
+// }
+
+// 穿梭框
+.ant-transfer-list{
+  width: 240px;
+  height: 300px;
+}
+
+// 气泡提醒
+.ant-popover-message-title {
+  // padding-left: 0px;
+  padding-right: 95px;
+  padding-bottom: 8px;
+}
+
+// 卡片
+.ant-card-meta{
+  display: flex;
+  align-items: center;
 }

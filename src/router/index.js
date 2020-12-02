@@ -7,8 +7,38 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'guide',
-    component: Guide
+    // name: 'guide',
+    component: Guide,
+    // meta:{
+      // title: '首页',
+    // }
+    children: [
+      {//介绍
+        path:'/Introduce',
+        name:'Introduce',
+        component:() => import('../views/guideArc/introduce.vue')
+      },
+      {//设计价值观
+        path:'/DesignValue',
+        name:'DesignValue',
+        component:() => import('../views/guideArc/designValue.vue')
+      },
+      {//设计原则
+        path:'/DesignTenet',
+        name:'DesignTenet',
+        component:() => import('../views/guideArc/designTenet.vue')
+      },
+      // {//
+      //   path:'/',
+      //   name:'',
+      //   component:() => import('../views/resourceArc/.vue')
+      // },
+      // {//
+      //   path:'/',
+      //   name:'',
+      //   component:() => import('../views/resourceArc/.vue')
+      // },
+    ]
   },
   {
     path: '/Module',
@@ -36,12 +66,20 @@ const routes = [
       {
         path:'/Breadcrumb',
         name:'Breadcrumb',
-        component:() => import('../views/moduleArc/breadcrumb.vue')
+        component:() => import('../views/moduleArc/breadcrumb.vue'),
+        // meta:{
+          // title: '面包屑',
+        //   keepAlive: false
+        // }
       },
       {
         path:'/Dropdown',
         name:'Dropdown',
-        component:() => import('../views/moduleArc/dropdown.vue')
+        component:() => import('../views/moduleArc/dropdown.vue'),
+        // meta:{
+          // title: '下拉菜单',
+        //   keepAlive: false
+        // }
       },
       {
         path:'/Pagination',
@@ -52,21 +90,105 @@ const routes = [
         path:'/Steps',
         name:'Steps',
         component:() => import('../views/moduleArc/steps.vue')
-      }
+      },
+      {
+        path:'/Checkbox',
+        name:'Checkbox',
+        component:() => import('../views/moduleArc/checkbox.vue')
+      },
+      {
+        path:'/RadioButton',
+        name:'RadioButton',
+        component:() => import('../views/moduleArc/radioButton.vue')
+      },
+      {
+        path:'/Chooser',
+        name:'Chooser',
+        component:() => import('../views/moduleArc/chooser.vue')
+      },
+      {
+        path:'/Date',
+        name:'Date',
+        component:() => import('../views/moduleArc/date.vue')
+      },
+      {
+        path:'/Form',
+        name:'Form',
+        component:() => import('../views/moduleArc/form.vue')
+      },
+      {
+        path:'/InputBox',
+        name:'InputBox',
+        component:() => import('../views/moduleArc/inputBox.vue')
+      },
+      {//开关
+        path:'/Switch',
+        name:'Switch',
+        component:() => import('../views/moduleArc/switch.vue')
+      },
+      {//树
+        path:'/Tree',
+        name:'Tree',
+        component:() => import('../views/moduleArc/tree.vue')
+      },
+      {//穿梭框
+        path:'/Transfer',
+        name:'Transfer',
+        component:() => import('../views/moduleArc/transfer.vue')
+      },
+      {//折叠面板
+        path:'/Collapse',
+        name:'Collapse',
+        component:() => import('../views/moduleArc/collapse.vue')
+      },
+      {//卡片
+        path:'/Card',
+        name:'Card',
+        component:() => import('../views/moduleArc/card.vue')
+      },
+      {//描述列表
+        path:'/Descriptions',
+        name:'Descriptions',
+        component:() => import('../views/moduleArc/descriptions.vue')
+      },
+      {//缺省图
+        path:'/Empty',
+        name:'Empty',
+        component:() => import('../views/moduleArc/empty.vue')
+      },
+      {//气泡提醒
+        path:'/Popconfirm',
+        name:'Popconfirm',
+        component:() => import('../views/moduleArc/popconfirm.vue')
+      },
+      // {//
+      //   path:'/',
+      //   name:'',
+      //   component:() => import('../views/moduleArc/.vue')
+      // },
+      // {//
+      //   path:'/',
+      //   name:'',
+      //   component:() => import('../views/moduleArc/.vue')
+      // },
     ]
   },
-  {//组件
+  {//资源
     path:'/Resource',
     name:'Resource',
-    component:() => import('../views/resource')
+    component:() => import('../views/resource'),
+    
   },
 ]
+
+
 
 const router = new VueRouter({
   routes
 })
 
 import store from '@/store'
+
 Vue.use(VueRouter)
     //解决路由跳转原路由或者刷新出错
 const originalReplace = VueRouter.prototype.replace;
