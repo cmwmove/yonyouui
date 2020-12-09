@@ -163,3 +163,83 @@
         font-size: 38px;
     }
 }
+
+// 页签
+
+.card-container {
+    /* background: #f5f5f5; */
+    overflow: hidden;
+    padding: 24px;
+}
+
+
+.card-container > .ant-tabs-card > .ant-tabs-content {
+    height: 120px;
+    margin-top: -16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+    background: #fff;
+    padding: 16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar {
+    border-color: #fff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+    border-color: transparent;
+    background: #dcd8d8;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+    border-color: #fff;
+    background: #cc0000;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+}
+
+
+// 输入框数字放大框
+.nonenumber{
+    // border: 1px solid #DDDDDD;
+    border-radius: 7px;
+    height: 50px;
+    padding: 0 10px;
+    background-color: #000;
+    position: absolute;
+    top: -56px;
+    
+    p{
+        color: #fff;
+        font-size: 29px;
+        width: 200px;
+        overflow: hidden;
+    }
+}
+.nonenumber ::before{
+    background-color: #000;
+}
+.numberform{
+    position: relative;
+}
+.three{
+    background: #000;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -11px;
+    left: 105px;
+}
+.disnon{
+    // display: none;
+}
+
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab div{
+    padding-top: 7px;
+}

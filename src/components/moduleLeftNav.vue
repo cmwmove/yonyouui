@@ -24,15 +24,15 @@
                 <a-menu-item key="/Descriptions"><router-link to="Descriptions"></router-link>描述列表</a-menu-item>
                 <a-menu-item key="/Empty"><router-link to="Empty"></router-link>缺省图</a-menu-item>
                 <a-menu-item key="/Popconfirm"><router-link to="Popconfirm"></router-link>气泡提醒</a-menu-item>
-                <a-menu-item key="/"><router-link to=""></router-link>标签</a-menu-item>
-                <a-menu-item key="23">警告提示</a-menu-item>
-                <a-menu-item key="24">抽屉</a-menu-item>
-                <a-menu-item key="25">加载中</a-menu-item>
-                <a-menu-item key="26">通知提醒</a-menu-item>
-                <a-menu-item key="27">页签</a-menu-item>
-                <a-menu-item key="28">图标</a-menu-item>
-                <a-menu-item key="29">弹框</a-menu-item>
-                <a-menu-item key="30">文字提示</a-menu-item>
+                <a-menu-item key="/Tag"><router-link to="Tag"></router-link>标签</a-menu-item>
+                <a-menu-item key="/Alert"><router-link to="Alert"></router-link>警告提示</a-menu-item>
+                <a-menu-item key="/Drawer"><router-link to="Drawer"></router-link>抽屉</a-menu-item>
+                <a-menu-item key="/Spin"><router-link to="Spin"></router-link>加载中</a-menu-item>
+                <a-menu-item key="/Notification"><router-link to="Notification"></router-link>通知提醒</a-menu-item>
+                <a-menu-item key="/Tabs"><router-link to="Tabs"></router-link>页签</a-menu-item>
+                <a-menu-item key="/Chart"><router-link to="Chart"></router-link>图标</a-menu-item>
+                <a-menu-item key="/Popup"><router-link to="Popup"></router-link>弹框</a-menu-item>
+                <a-menu-item key="/Tooltip"><router-link to="Tooltip"></router-link>文字提示</a-menu-item>
             </a-sub-menu>
         </a-menu>
     </div>

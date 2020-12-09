@@ -157,7 +157,7 @@ export default {
             title1 : '缺省图',
             title2 : '标签',
             path1 : '/Empty',
-            path2 : '/Transfer',
+            path2 : '/Tag',
             number : 20,
             buttonWidth: 70,
             text: '是否确定删除?',

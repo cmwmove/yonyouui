@@ -17,7 +17,9 @@
             <div class="intrduce margin-top20">
             </div>
             <div class="margin-top20">
-                <img width="945" src="image/4-29-1.png">
+                <div class="emptyBox">
+                    <a-empty />
+                </div>
             </div>
             <h1 class="margin-top40">装饰插画</h1>
             <div class="margin-top20">
@@ -47,5 +49,9 @@ export default {
 </script>
 
 <style>
-
+.emptyBox{
+    border: 1px solid #dddddd;
+    padding: 10px 20px;
+    width: 500px;
+}
 </style>

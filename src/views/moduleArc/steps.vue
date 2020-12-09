@@ -71,6 +71,8 @@
                 </a-step>
                 <a-step status="wait" title="结束">
                     <a-icon slot="icon" type="history" />
+                    <!-- <i class="iconfont iconbangzhu1"></i> -->
+
                 </a-step>
             </a-steps>
         </div>

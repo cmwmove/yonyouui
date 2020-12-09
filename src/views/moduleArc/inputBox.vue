@@ -82,6 +82,13 @@
                     <div class="Box inputBox1-1">
                         <span class="titleSpan">8.数字放大状态</span>
                         <div class="numberform">
+                             <!-- <a-tooltip>
+                                <template slot="title">
+                                {{bignumber}}
+                                </template>
+                                <a-input placeholder="文字内容" style="width:220px;" v-model="bignumber" @focus="bigNumber" @blur="blurNumber"/>
+                            </a-tooltip> -->
+
                             <div class="disnon" v-show="eightnumber">
                                 <div class="three"></div>
                                 <div class="nonenumber">
@@ -89,6 +96,8 @@
                                 </div>
                             </div>
                             <a-input placeholder="文字内容" style="width:220px;" v-model="bignumber" @focus="bigNumber" @blur="blurNumber"/>
+
+
                             <!-- <a-popover>
                                 <template slot="content">
                                     <p>{{this.names}}</p>
@@ -224,39 +233,5 @@ export default {
         padding-top: 20px;
     }
 }
-.nonenumber{
-    // border: 1px solid #DDDDDD;
-    border-radius: 7px;
-    height: 50px;
-    padding: 0 10px;
-    background-color: #000;
-    position: absolute;
-    top: -56px;
-    
-    p{
-        color: #fff;
-        font-size: 29px;
-        width: 200px;
-        overflow: hidden;
-    }
-}
-.nonenumber ::before{
-    background-color: #000;
-}
-.numberform{
-    position: relative;
-}
-.three{
-    background: #000;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    position: absolute;
-    transform: rotate(45deg);
-    top: -11px;
-    left: 105px;
-}
-.disnon{
-    // display: none;
-}
+
 </style>

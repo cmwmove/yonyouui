@@ -28,15 +28,11 @@ const routes = [
         name:'DesignTenet',
         component:() => import('../views/guideArc/designTenet.vue')
       },
+      
       // {//
       //   path:'/',
       //   name:'',
-      //   component:() => import('../views/resourceArc/.vue')
-      // },
-      // {//
-      //   path:'/',
-      //   name:'',
-      //   component:() => import('../views/resourceArc/.vue')
+      //   component:() => import('../views/guideArc/.vue')
       // },
     ]
   },
@@ -160,6 +156,51 @@ const routes = [
         path:'/Popconfirm',
         name:'Popconfirm',
         component:() => import('../views/moduleArc/popconfirm.vue')
+      },
+      {//标签
+        path:'/Tag',
+        name:'Tag',
+        component:() => import('../views/moduleArc/tag.vue')
+      },
+      {//警告提示
+        path:'/Alert',
+        name:'Alert',
+        component:() => import('../views/moduleArc/alert.vue')
+      },
+      {//抽屉
+        path:'/Drawer',
+        name:'Drawer',
+        component:() => import('../views/moduleArc/drawer.vue')
+      },
+      {//加载中
+        path:'/Spin',
+        name:'Spin',
+        component:() => import('../views/moduleArc/spin.vue')
+      },
+      {//通知提醒
+        path:'/Notification',
+        name:'Notification',
+        component:() => import('../views/moduleArc/notification.vue')
+      },
+      {//页签
+        path:'/Tabs',
+        name:'Tabs',
+        component:() => import('../views/moduleArc/tabs.vue')
+      },
+      {//图表
+        path:'/Chart',
+        name:'Chart',
+        component:() => import('../views/moduleArc/chart.vue')
+      },
+      {//弹框
+        path:'/Popup',
+        name:'Popup',
+        component:() => import('../views/moduleArc/popup.vue')
+      },
+      {//文字提醒
+        path:'/Tooltip',
+        name:'Tooltip',
+        component:() => import('../views/moduleArc/tooltip.vue')
       },
       // {//
       //   path:'/',
