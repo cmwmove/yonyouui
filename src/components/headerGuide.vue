@@ -30,7 +30,7 @@ export default {
             current:0,
             current2:"",
             items:[
-                {title:'指南',path:'/'},
+                {title:'指南',path:'/Introduce'},
                 {title:'组件',path:'/Letter'},
                 {title:'资源',path:'/Resource'},
             ],

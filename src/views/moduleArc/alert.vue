@@ -16,10 +16,10 @@
             </div>
             <div class="margin-top20">
                 <div class="alertBox">
-                    <a-alert message="Success Text" type="success" closable/>
-                    <div class="margin-top20"><a-alert message="Info Text" type="info" closable/></div>
-                    <div class="margin-top20"><a-alert message="Warning Text" type="warning" closable/></div>
-                    <div class="margin-top20"><a-alert message="Error Text" type="error" closable/></div>
+                    <a-alert message="新消息提醒" type="info" closable/>
+                    <div class="margin-top20"><a-alert message="修改信息成功" type="success" closable/></div>
+                    <div class="margin-top20"><a-alert message="警告信息提醒" type="warning" closable/></div>
+                    <div class="margin-top20"><a-alert message="操作出现错误" type="error" closable/></div>
                 </div>
             </div>
             <div class="intrduce margin-top40">
@@ -27,14 +27,14 @@
             </div>
             <div class="margin-top20 ">
                 <div class="alertBox">
-                        <a-alert message="新消息提醒" type="success" closable>
-                        <p slot="description">马克风寒发发卡对焊法兰框架和弗兰克的说法</p>
-                        </a-alert>
-                        <div class="margin-top20">
-                            <a-alert message="新消息提醒"
+                        <a-alert message="新消息提醒"
                             description="马克风寒发发卡对焊法兰框架和弗兰克的说法"
                             type="info" closable
                             />
+                        <div class="margin-top20">
+                            <a-alert message="新消息提醒" type="success" closable>
+                        <p slot="description">马克风寒发发卡对焊法兰框架和弗兰克的说法</p>
+                        </a-alert>
                         </div>
                         <div class="margin-top20">
                             <a-alert
@@ -100,7 +100,18 @@
                 <p><b>顶部警告提示样式 :</b> </p>
             </div>
             <div class="margin-top20 ">
-                <div class="alertBox"></div>
+                <div class="alertBox2 posR">
+                    <div>
+                        <a-alert class="aleabou top1" message="新消息提醒" type="info" closable/>
+                    </div>
+                    <div><a-alert class="aleabou top2" message="新消息提醒" type="info" show-icon closable/></div>
+                    <div>
+                        <a-alert class="aleabou top3" message="新消息提醒"
+                        description="马克风寒发发卡对焊法兰框架和弗兰克的说法"
+                        type="info" closable
+                        />
+                    </div>
+                </div>
             </div>
         </div>
         <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2" :number="number"></Changes>
@@ -132,5 +143,28 @@ export default {
     border: 1px solid #dddddd;
     padding: 30px 40px 30px 15px;
     width: 530px;
+}
+.alertBox2{
+    border: 1px solid #dddddd;
+    width: 530px;
+    height: 236px;
+}
+.posR{
+    position: relative;
+}
+.aleabou{
+    position: absolute;
+    border: none;
+    width: 100%;
+    border-radius: 0;
+}
+.top1{
+    top: 0;
+}
+.top2{
+    top:60px;
+}
+.top3{
+    top: 120px;
 }
 </style>

@@ -75,7 +75,7 @@
                     <div class="Box inputBox1-1">
                         <span class="titleSpan">7.只读输入框</span>
                         <div>
-                            <a-input value="只读内容" readOnly/>
+                            <a-input class="readinput" value="只读内容" readOnly/>
                             <!-- <input type="text" value="只读内容" readonly="readonly"> -->
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                         <span class="titleSpan">9.报错状态</span>
                         <div>
                             <a-form-model ref="ruleForm" :model="form" :rules="rules" >
-                                 <a-form-model-item ref="name" label="Activity name" prop="name">
+                                 <a-form-model-item ref="name" label="单位名称" prop="name">
                                     <a-input
                                         placeholder="输入正确内容"
                                         v-model="form.name"
@@ -129,7 +129,7 @@
                         <span class="titleSpan">10.必填项</span>
                         <div>
                             <a-form-model ref="ruleForm" :model="form" :rules="rules" >
-                                <a-form-model-item label="Activity form" prop="desc">
+                                <a-form-model-item label="单位名称" prop="desc">
                                     <a-input v-model="form.desc" type="text" />
                                 </a-form-model-item>
                             </a-form-model>

@@ -30,12 +30,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div>
-                        <div class="collapseone" @click="closeClick">
+                    <div>
+                        <div class="collapseone margin-top20" @click="closeClick2">
                             <span>折叠面板</span>
-                            <i class="iconfont iconxia" v-bind:class="{trans:isTrans}"></i>
+                            <i class="iconfont iconxia" v-bind:class="{trans:isTrans2}"></i>
                         </div>
-                        <div class="closeBox" v-show="closeContent">
+                        <div class="closeBox" v-show="closeContent2">
                             <div class="closeBox-content">
                                 项目名称：<a-input placeholder="选择参照内容" style="width:220px;"></a-input>
                             </div>
@@ -43,7 +43,7 @@
                                 项目编号：<a-input placeholder="选择参照内容" style="width:220px;"></a-input>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     
                 </div>
             </div>
@@ -79,6 +79,8 @@ export default {
             number : 16,
             closeContent: true,
             isTrans: false,
+            closeContent2: false,
+            isTrans2: true,
             isLeft: true,
             // isBlock: true,
             // isNone: false,
@@ -95,6 +97,10 @@ export default {
             this.closeContent = !this.closeContent;
             this.isTrans = !this.isTrans;
         },
+        closeClick2(){
+            this.closeContent2 = !this.closeContent2;
+            this.isTrans2 = !this.isTrans2;
+        },
         leftClick(){
             this.isLeft = !this.isLeft;
             // this.isBlock = !this.isBlock;
@@ -109,9 +115,9 @@ export default {
 <style lang="less">
 .collBox{
     border: 1px solid #dddddd;
-    padding:40px 20px;
+    padding:20px 20px;
     width: 800px;
-    height: 200px;
+    // height: 240px;
 
     .closeBox{
         display: flex;

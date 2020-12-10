@@ -19,7 +19,7 @@
         </a-list-item-meta>
       </a-list-item>
     </a-list>
-    <a-drawer width="640" placement="right" :closable="true" title="弹框标题" :visible="visible" @close="onClose">
+    <a-drawer width="520" placement="right" :closable="true" title="弹框标题" :visible="visible" @close="onClose">
         <a-descriptions :column="{md:2}">
             <a-descriptions-item label="姓名" >
                 王用友
@@ -34,8 +34,8 @@
                 北京
             </a-descriptions-item>
             <a-descriptions-item label="单位地址" >
-                <a-button type="link" @click="showChildrenDrawer">
-                    北京市海淀区XXX
+                <a-button class="place" type="link" @click="showChildrenDrawer">
+                    北京市海淀区
                 </a-button>
                 <a-drawer
                     title="地图"

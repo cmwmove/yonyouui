@@ -21,7 +21,7 @@
                         <span class="formSpan">1.标签+文本框</span>
                         <div>
                             标准表单：<a-input placeholder="请输入" style="width: 220px" />
-                            <!-- <a-input placeholder="图标" style="width: 220px"></a-input><a-icon type="step-forward" /> -->
+                            <!-- <a-input placeholder="图标" style="width: 220px"><a-icon type="step-forward" /></a-input> -->
                         </div>
                     </div>
                     <div class="Box formBox1">
@@ -85,7 +85,7 @@
                             </div>
                             <div>
                                 <a-form-item label="标题最多不超过文本框宽高" has-feedback>
-                                    <a-input allow-clear value="填写内容可删除" />
+                                    <a-input allow-clear default-value="填写内容可删除" />
                                 </a-form-item>
                             </div>
                         </div>

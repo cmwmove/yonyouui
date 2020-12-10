@@ -64,25 +64,19 @@
                     Presets:
                     </h4>
                     <div>
-                    <a-tag color="pink">
+                    <a-tag class="tagBlueOne">
                         标签1
                     </a-tag>
-                    <a-tag color="red">
+                    <a-tag class="tagBlueTwo">
                         标签1
                     </a-tag>
-                    <a-tag color="orange">
+                    <a-tag class="tagorange">
                         标签1
                     </a-tag>
-                    <a-tag color="green">
+                    <a-tag class="tagred">
                         标签1
                     </a-tag>
-                    <a-tag color="cyan">
-                        标签1
-                    </a-tag>
-                    <a-tag color="blue">
-                        标签1
-                    </a-tag>
-                    <a-tag color="purple">
+                    <a-tag class="taggreen">
                         标签1
                     </a-tag>
                     </div>

@@ -20,7 +20,7 @@
                 <div class="popBox1">
                     <div>
                         <a-button type="primary" @click="showModal">
-                        Open Modal
+                        基本弹窗
                         </a-button>
                         <a-modal v-model="visible" title="弹窗标题" @ok="handleOk">
                         <p>挂开关机发布迟迟不一发错人被访问人员不日一个大夫人无法去海边 缺乏还不如富强浮球开关风起接洽免加油快速搭建换发会计师副本副科级阿萨德和夫人啊奥科吉粉红色把六合彩 阿萨德合法而浪费苍父亲依然高峰期利润爱人与亲人不卡号VUI和va还不错V在</p>

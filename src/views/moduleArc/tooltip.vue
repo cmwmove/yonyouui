@@ -41,9 +41,9 @@
                             <i class="iconfont icongongzuotai"></i>
                         </a-tooltip>
                     </div>
-                    <div>
+                    <div class="margin-top20">
                         <a-form-model-item>
-                            表单必填项与提示
+                            <span class="xing">*</span>表单必填项与提示
                             <a-tooltip>
                                 <template slot="title">
                                 自2019年四月起政务UI中后台产品正式发布
@@ -193,7 +193,7 @@ export default {
     border: 1px solid #dddddd;
     padding: 30px 30px 0 30px;
     width: 450px;
-    display: flex;
+    /* display: flex; */
 }
 .tllBox3{
     border: 1px solid #dddddd;
@@ -224,5 +224,10 @@ export default {
 .shouye{
     margin-right: 18px;
     padding-top: 7px;
+}
+
+.xing{
+    color: red;
+    
 }
 </style>

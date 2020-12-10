@@ -105,7 +105,18 @@
                 <p>比如：已审批或已提交的节点，后面有对勾标识。</p>
             </div>
             <div class="margin-top20">
-                <div class="treeBox2"></div>
+                <div class="treeBox2">
+                    <div>
+                        <!-- <div class="treeBox1"> -->
+                        <a-tree
+                            :tree-data="treeDataS"
+                            :default-expanded-keys="['0-0-0-0']"
+                        >
+                            <span slot="title0010" style="color: #1890ff">sss</span>
+                        </a-tree>
+                        <!-- </div> -->
+                    </div>
+                </div>
             </div>
         </div>
         <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2" :number="number"></Changes>
@@ -269,7 +280,7 @@ export default {
     data(){
         return{
             title1 : '开关',
-            title2 : '穿梭图',
+            title2 : '穿梭框',
             path1 : '/Switch',
             path2 : '/Transfer',
             number : 14,

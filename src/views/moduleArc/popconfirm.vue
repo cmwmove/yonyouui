@@ -21,7 +21,7 @@
                         @confirm="confirm"
                         @cancel="cancel"
                     >
-                        <a-icon slot="icon" />
+                        <!-- <a-icon slot="icon" type=""/> -->
                         <a href="#">删除</a>
                     </a-popconfirm>
                 </div>
@@ -48,22 +48,19 @@
                 <div class="popBoxT">
                     <div id="components-a-popconfirm-demo-placement">
                         <div :style="{ marginLeft: `${buttonWidth}px`, whiteSpace: 'nowrap' }">
-                        <a-popconfirm placement="topLeft" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="topLeft" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>上左</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="top" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="top" ok-text="Yes" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>上</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="topRight" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="topRight" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
@@ -71,22 +68,19 @@
                         </a-popconfirm>
                         </div>
                         <div :style="{ width: `${buttonWidth}px`, float: 'left' }">
-                        <a-popconfirm placement="leftTop" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="leftTop" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>左上</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="left" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="left" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>左</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="leftBottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="leftBottom" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
@@ -94,22 +88,19 @@
                         </a-popconfirm>
                         </div>
                         <div :style="{ width: `${buttonWidth}px`, marginLeft: `${buttonWidth * 4 + 24}px` }">
-                        <a-popconfirm placement="rightTop" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="rightTop" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>右上</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="right" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="right" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>右</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="rightBottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="rightBottom" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
@@ -117,22 +108,19 @@
                         </a-popconfirm>
                         </div>
                         <div :style="{ marginLeft: `${buttonWidth}px`, clear: 'both', whiteSpace: 'nowrap' }">
-                        <a-popconfirm placement="bottomLeft" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="bottomLeft" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>下左</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="bottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="bottom" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
                             <a-button>下</a-button>
                         </a-popconfirm>
-                        <a-popconfirm placement="bottomRight" ok-text="Yes" cancel-text="No" @confirm="confirm">
-                            <a-icon slot="icon" />
+                        <a-popconfirm placement="bottomRight" ok-text="确定" cancel-text="取消" @confirm="confirm">
                             <template slot="title">
                             <p>{{ text }}</p>
                             </template>
@@ -164,7 +152,8 @@ export default {
         }
     },
     components:{
-        Changes
+        Changes,
+        message
     },
     methods: {
     confirm(e) {
@@ -184,8 +173,9 @@ export default {
     border: 1px solid #dddddd;
     /* width: 271px;
     padding: 124px 0 20px 120px; */
-    width: 160px;
-    padding: 10px 64px;
+    width: 72px;
+    padding: 5px 21px;
+    border-radius: 4px;
 }
 #components-a-popconfirm-demo-placement .ant-btn {
   width: 70px;

@@ -17,13 +17,14 @@
             <div class="intrduce margin-top20">
             </div>
             <div class="margin-top20">
-                <div class="emptyBox">
+                <!-- <div class="emptyBox">
                     <a-empty />
-                </div>
+                </div> -->
+                <img width="945" src="../../assets/img/4-29-1.png">
             </div>
             <h1 class="margin-top40">装饰插画</h1>
             <div class="margin-top20">
-                <img width="945" src="image/4-29-2.png">
+                <img width="945" src="../../assets/img/4-29-2.png">
             </div>
         </div>
         <Changes :title1="title1" :title2="title2" :path1="path1" :path2="path2" :number="number"></Changes>

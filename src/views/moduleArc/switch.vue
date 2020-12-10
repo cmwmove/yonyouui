@@ -66,7 +66,7 @@ export default {
             title1 : '输入框',
             title2 : '树',
             path1 : '/InputBox',
-            path2 : '/Dropdown',
+            path2 : '/Tree',
             number : 13
         }
     },

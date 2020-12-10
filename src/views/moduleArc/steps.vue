@@ -37,7 +37,7 @@
         <p>迷你版</p>
     </div>
     <div class="margin-top20">
-        <div class="BoxS miniBox">
+        <div class="BoxS miniBox1">
             <a-steps :current="2" size="small">
                 <a-step title="已完成步骤" />
                 <a-step title="步骤名称可以使用十个字" />
@@ -52,7 +52,7 @@
         <p class="margin-top20">（1）前后节点无严格的前后顺序</p>
     </div>
     <div class="margin-top20">
-        <div class="BoxS miniBox">
+        <div class="BoxS miniBox1">
             <a-steps>
                 <a-step status="finish" title="图标加文字">
                     <!-- <i class="iconfont iconzuzhiqunzu"></i> -->
@@ -180,7 +180,7 @@ export default {
             title1 : '分页',
             title2 : '多选框',
             path1 : '/Pagination',
-            path2 : '/Icon',
+            path2 : '/Checkbox',
             number : 7,
             current: 0,
             currents: 0,
@@ -208,7 +208,7 @@ export default {
     height: 155px;
     padding: 17px 20px;
 }
-.miniBox{
+.miniBox1{
     width: 1040px;
     height: 62px;
     padding: 0px 20px;

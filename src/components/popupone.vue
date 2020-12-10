@@ -2,7 +2,7 @@
     <div>
         <div>
             <a-button type="primary" @click="showModal">
-            Open Modal
+            表单弹窗
             </a-button>
             <a-modal v-model="visible" title="弹窗标题" @ok="handleOk" style="width:700px;">
                 <a-form :form="form" layout="vertical"  hide-required-mark>

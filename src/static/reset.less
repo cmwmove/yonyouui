@@ -224,7 +224,7 @@
 
 // 左侧导航栏
 .ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 // 标准分页
@@ -233,10 +233,12 @@
 .ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next{
   margin: 0;
   border-radius: 0;
+  margin-left: -1px;
 }
 .ant-pagination-item{
   margin: 0;
   border-radius: 0;
+  margin-left: -1px;
   // border-right: none;
 }
 .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
@@ -247,21 +249,21 @@
 // 分页小尺寸
 .ant-pagination.mini .ant-pagination-prev .ant-pagination-item-link, .ant-pagination.mini .ant-pagination-next .ant-pagination-item-link{
   border: 1px solid @border-color-base;
-  // border-right: none;
   border-radius: 0;
 }
 .ant-pagination.mini .ant-pagination-item:not(.ant-pagination-item-active){
   border: 1px solid @border-color-base;
-  // border-right: none;
   border-radius: 0;
+}
+.ant-pagination.mini .ant-pagination-prev, .ant-pagination.mini .ant-pagination-next{
+  margin-left: -1px;
 }
 .ant-pagination.mini .ant-pagination-item{
   border-radius: 0;
-  // border-right: none;
+  margin-left: -1px;
 }
 // 分页选中时变化
 .ant-pagination-item-active{
-  // border: none;
   background-color: @primary-color-hover;
 }
 .ant-pagination-item-active a{
@@ -336,7 +338,10 @@
 .ant-tag a:hover{
   color:#fff
 }
-
+// 卡片组件
+.ant-card-actions{
+  background-color: #fff;
+}
 
 // 页签
 .ant-tabs-nav .ant-tabs-tab{
@@ -382,4 +387,93 @@
 // 弹窗大小
 .ant-modal{
   width: 700px !important;
+}
+.place{
+  padding: 0;
+}
+// 描述列表
+.ant-descriptions-row > th, .ant-descriptions-row > td {
+  padding-bottom: 10px;
+}
+td > .ant-descriptions-item-label {
+  color: #666666;
+  width: 102px;
+  text-align: right;
+}
+.ant-descriptions-bordered .ant-descriptions-item-label, .ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 9px 10px;
+}
+
+// 标签
+// .ant-tag-pink:hover {
+//   background-color: #ff008c;
+// }
+.tagBlueOne:hover {
+  background-color: #0066ff;
+}
+.tagBlueTwo:hover {
+  background-color: #0099ff;
+}
+.tagorange:hover {
+  background-color: #ff6633;
+}
+.tagred:hover {
+  background-color: #cc0000;
+}
+.taggreen:hover {
+  background-color: #00cc66;
+}
+// .ant-tag-purple:hover {
+//   background-color: @orange-color-hover;
+// }
+
+// 0066FF蓝色
+// 0099FF第二个蓝
+// 10%
+// ff6633橙色
+// cc0000红色
+// 00cc66绿色
+
+.tagBlueOne{
+  background-color: rgba(0, 102, 255, 0.1);
+  border: 1px solid #0066FF;
+  color: #0066FF;
+}
+.tagBlueTwo{
+  background-color: rgba(0, 153, 255, 0.1);
+  border: 1px solid #0099FF;
+  color: #0099FF;
+}
+.tagorange{
+  background-color: rgba(255, 102, 51, 0.1);
+  border: 1px solid #ff6633;
+  color: #ff6633;
+}
+.tagred{
+  background-color:rgba(204, 0, 0, 0.1);
+  border: 1px solid #cc0000;
+  color: #cc0000;
+}
+.taggreen{
+  background-color: rgba(0, 204, 102, 0.1);
+  border: 1px solid #00cc66;
+  color: #00cc66;
+}
+
+// 警告提示
+.ant-alert-info{
+  background-color:  rgba(0, 153, 255, 0.1);
+  border: 1px solid #0066FF;
+}
+.ant-alert-success {
+  background-color: rgba(0, 209, 88, 0.1);
+  border: 1px solid #00D158;
+}
+.ant-alert-warning {
+  background-color: rgba(255, 203, 0, 0.1);
+  border: 1px solid #FFCB00;
+}
+.ant-alert-error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #FF0000;
 }

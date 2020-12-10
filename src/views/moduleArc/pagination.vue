@@ -27,22 +27,22 @@
                         
                         <div class="pags">
                             <ul class="ant-pagination">
-                                <li class="allleft borderRN" @click="pageleftClick">
+                                <li class="allleft pagleft" @click="pageleftClick">
                                     <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                                 </li>
                                 <li class="alllefts"><a-pagination v-model="current" :total="50" show-less-items /></li>
-                                <li class="allleft" @click="pagerightClick">
+                                <li class="allleft pagright" @click="pagerightClick">
                                     <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                                 </li>
                             </ul>
                         </div>
                         <div class="pags">
                             <ul class="ant-pagination">
-                                <li class="allleftdis borderRN">
+                                <li class="allleftdis pagleft">
                                     <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                                 </li>
                                 <li class="alllefts"><a-pagination v-model="current" :total="50" disabled show-less-items /></li>
-                                <li class="allleftdis">
+                                <li class="allleftdis pagright">
                                     <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                                 </li>
                             </ul>
@@ -55,11 +55,11 @@
                         <!-- 小尺寸分页 -->
                         <div class="pagsmall">
                             <ul class="ant-pagination">
-                                <li class="allleft borderRN" @click="samllpageleftClick">
+                                <li class="allleft pagleft" @click="samllpageleftClick">
                                     <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                                 </li>
                                 <li class="alllefts"><a-pagination size="small" v-model="currents" :total="50" show-less-items /></li>
-                                <li class="allleft" @click="samllpagerightClick">
+                                <li class="allleft pagright" @click="samllpagerightClick">
                                     <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                                 </li>
                             </ul>
@@ -67,11 +67,11 @@
                         <!-- 小尺寸禁止分页 -->
                         <div class="pagsmall">
                             <ul class="ant-pagination">
-                                <li class="allleftdis borderRN">
+                                <li class="allleftdis pagleft">
                                     <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                                 </li>
                                 <li class="alllefts"><a-pagination v-model="currents" size="small" :total="50" disabled show-less-items /></li>
-                                <li class="allleftdis">
+                                <li class="allleftdis pagright">
                                     <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                                 </li>
                             </ul>
@@ -88,7 +88,6 @@
                 <div class="miniBox Box">
                     <div>
                         <div class="margin-bottom18"><a-pagination simple :default-current="2" :total="50"/></div>
-                        <!-- <div><a-pagination simple :default-current="2" :total="50" disabled/></div> -->
                     </div>
                 </div>
             </div>
@@ -99,29 +98,18 @@
             </div>
             <div class="margin-top20">
                 <div class="maxBox">
-                    <!-- <div class="pags">
-                        <div class="margin-bottom18">
-                            <a-pagination show-size-changer v-model="currentall" :total="1000" />
-                        </div>
-                        <div>
-                            <a-pagination v-model="currentall" show-size-changer :page-size.sync="pageSize" :total="1000" disabled />
-                        </div>
-                    </div> -->
-                    <!-- <div class="pags">
-                        <div class="margin-bottom18">
-                            <a-pagination v-model="currentall" :total="500" />
-                        </div>
-                        <div>
-                            <a-pagination v-model="currentall" :total="500" disabled/>
-                        </div>
-                    </div> -->
                     <div class="pags">
                         <ul class="ant-pagination">
-                            <li class="allleft borderRN" @click="pageAleftClick">
+                            <li class="pagsnumber">
+                                <span>每页</span>
+                                <a-input-number class="paginput" id="inputNumber" v-model="value" :min="1" :max="100" />
+                                <span>条</span>
+                            </li>
+                            <li class="allleft pagleft" @click="pageAleftClick">
                                 <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                             </li>
                             <li class="alllefts"><a-pagination v-model="currentall" :total="500" /></li>
-                            <li class="allleft" @click="pageArightClick">
+                            <li class="allleft pagright" @click="pageArightClick">
                                 <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                             </li>
                         </ul>
@@ -130,14 +118,14 @@
                         <ul class="ant-pagination">
                             <li class="pagsnumber">
                                 <span>每页</span>
-                                <input type="number">
+                                <a-input-number class="paginputBas" id="inputNumber" v-model="value" :min="1" :max="100" />
                                 <span>条</span>
                             </li>
-                            <li class="allleft borderRN" @click="pageAleftClick">
+                            <li class="allleftdis pagleft" @click="pageAleftClick">
                                 <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                             </li>
-                            <li class="alllefts"><a-pagination v-model="currentall" :total="500" disabled/></li>
-                            <li class="allleft" @click="pageArightClick">
+                            <li class="alllefts pagright"><a-pagination v-model="currentall" :total="500" disabled/></li>
+                            <li class="allleftdis" @click="pageArightClick">
                                 <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                             </li>
                         </ul>
@@ -150,8 +138,47 @@
                 <p>更多分页 : 上一页、下一页、首页、尾页、具体显示5页，显示数据总量，设置每页显示数据量，快速跳转到某页。</p>
             </div>
             <div class="margin-top20">
-                <div class="moreBox Box">
-
+                <div class="moreBox">
+                    <div class="pags">
+                        <ul class="ant-pagination">
+                            <li class="pagsnumber">
+                                <span>每页</span>
+                                <a-input-number class="paginput" id="inputNumber" v-model="value" :min="1" :max="100" />
+                                <span>条</span>
+                            </li>
+                            <li class="allleft pagleft" @click="pageAleftClick">
+                                <a class="all"><i class="iconfont iconxiangzuo"></i></a>
+                            </li>
+                            <li class="alllefts"><a-pagination v-model="currentall" :total="500" /></li>
+                            <li class="allleft pagright" @click="pageArightClick">
+                                <a class="all" ><i class="iconfont iconxiangyou"></i></a>
+                            </li>
+                            <li class="pagsnumber">
+                                <a-input-number class="paginput" id="inputNumber" v-model="value" :min="1" :max="100" />
+                                <a-button class="button">确定</a-button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pags">
+                        <ul class="ant-pagination">
+                            <li class="pagsnumber">
+                                <span>每页</span>
+                                <a-input-number class="paginputBas" id="inputNumber" v-model="value" :min="1" :max="100" />
+                                <span>条</span>
+                            </li>
+                            <li class="allleftdis pagleft">
+                                <a class="all"><i class="iconfont iconxiangzuo"></i></a>
+                            </li>
+                            <li class="alllefts"><a-pagination v-model="currentall" :total="500" disabled/></li>
+                            <li class="allleftdis pagright">
+                                <a class="all" ><i class="iconfont iconxiangyou"></i></a>
+                            </li>
+                            <li class="pagsnumber">
+                                <a-input-number class="paginputBas" id="inputNumber" v-model="value" :min="1" :max="100" />
+                                <a-button class="buttonBas">确定</a-button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,6 +201,7 @@ export default {
             currents : 1,
             currentall : 2,
             pageSize: 10,
+            value:1
             // locale:zhCN,
         }
     },
@@ -214,6 +242,7 @@ export default {
 .miniBox{
     height: 96px;
     width: 725px;
+    padding-left: 10px;
 }
 .maxBox{
     height: 116px;
@@ -223,32 +252,15 @@ export default {
     border: 1px solid #DDDDDD;
 }
 .moreBox{
-    height: 112px;
     width: 725px;
+    border: 1px solid #DDDDDD;
+    padding: 4px 16px;
 }
 .margin-bottom18{
     margin-bottom: 18px;
 }
 
 
-// 标准分页
-.pagBoxUp{
-
-    .pagDe{
-        margin-bottom: 40px;
-    }
-}
-
-.pagsnumber{
-    margin-right: 29px;
-    input{
-        width: 64px;
-        height: 32px;
-        margin: 0 10px;
-        border: 1px solid #DDDDDD;
-        border-radius: 4px;
-    }
-}
 
 
 </style>

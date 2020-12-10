@@ -1,9 +1,9 @@
 <template>
   <div>
-    <a-button type="primary" @click="showDrawer"> <a-icon type="plus" /> New account </a-button>
+    <a-button type="primary" @click="showDrawer"> <a-icon type="plus" />表单抽屉</a-button>
     <a-drawer
       title="弹框标题"
-      :width="720"
+      :width="520"
       :visible="visible"
       :body-style="{ paddingBottom: '80px' }"
       @close="onClose"
@@ -19,7 +19,7 @@
                     rules: [{ required: true, message: 'Please select an owner' }],
                   },
                 ]"
-                placeholder="选择内容"
+                placeholder="选择内容" style="width:220px;"
               >
                 <a-select-option value="xiao">
                   Xiaoxiao Fu
@@ -39,7 +39,7 @@
                     rules: [{ required: true, message: 'Please enter user name' }],
                   },
                 ]"
-                placeholder="填写内容"
+                placeholder="填写内容" style="width:220px;"
               />
             </a-form-item>
           </a-col>
@@ -54,7 +54,7 @@
                     rules: [{ required: true, message: 'Please select an owner' }],
                   },
                 ]"
-                placeholder="选择内容"
+                placeholder="选择内容" style="width:220px;"
               >
                 <a-select-option value="xiao">
                   Xiaoxiao Fu
@@ -74,7 +74,7 @@
                     rules: [{ required: true, message: 'Please enter user name' }],
                   },
                 ]"
-                placeholder="填写内容"
+                placeholder="填写内容" style="width:220px;"
               />
             </a-form-item>
           </a-col>
@@ -89,7 +89,7 @@
                     rules: [{ required: true, message: 'Please choose the dateTime' }],
                   },
                 ]"
-                style="width: 100%"
+                style="width: 220px"
                 placeholder="选择参照内容"
                 :get-popup-container="trigger => trigger.parentNode"
               />
@@ -104,7 +104,7 @@
                     rules: [{ required: true, message: 'Please choose the dateTime' }],
                   },
                 ]"
-                style="width: 100%"
+                style="width: 220px"
                 placeholder="选择参照内容"
                 :get-popup-container="trigger => trigger.parentNode"
               />

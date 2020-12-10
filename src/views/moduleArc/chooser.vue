@@ -35,7 +35,7 @@
                         <span class="choSpan">2.地区选择器</span>
                         <div>
                             <span>连级选择：</span>
-                            <a-cascader :options="options" change-on-select />
+                            <a-cascader :options="options" placeholder="请选择" change-on-select />
                         </div>
                     </div>
                 </div>

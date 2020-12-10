@@ -74,7 +74,7 @@
                         </a-select>
                     </div>
                 </div>
-                <div class="formDrop">
+                <!-- <div class="formDrop">
                     <p>下拉多选：从已有条目中选择</p>
                     <span>下拉多选样式一 居右显示，从当前所选内容到所选内容第一项依次显示，超出输入框范围隐藏所选项。</span>
                     <div class="DropBox">
@@ -85,8 +85,8 @@
                             </a-select-option>
                         </a-select>
                     </div>
-                </div>
-                <div class="formDrop">
+                </div> -->
+                <!-- <div class="formDrop">
                     <span>下拉多选样式二 下拉选项我们建议超过10条后，出现滚动条。</span>
                     <div class="DropBox">
                         <span>下拉选择：</span>
@@ -96,10 +96,10 @@
                             </a-select-option>
                         </a-select>
                     </div>
-                </div>
+                </div> -->
                 <div class="formDrop">
                     <p>下拉多选：从已有条目中选择</p>
-                    <span>下拉多选样式三 居右显示，倒序显示即从当前多选内容到所选内容第一项依次显示，超出输入框范围隐藏所选项。</span>
+                    <span>下拉多选样式 居右显示，倒序显示即从当前多选内容到所选内容第一项依次显示，超出输入框范围隐藏所选项。</span>
                     <div class="DropBox">
                         <span>下拉选择：</span>
                         <a-select mode="multiple" placeholder="选择内容" :default-value="['a1',]" style="width: 200px" >

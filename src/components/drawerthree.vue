@@ -53,7 +53,7 @@
                         </a-descriptions-item>
                     </a-descriptions>
     </a-drawer> -->
-    <a-drawer width="640" placement="right" :closable="true" title="弹框标题" :visible="visible" @close="onClose">
+    <a-drawer width="520" placement="right" :closable="true" title="弹框标题" :visible="visible" @close="onClose">
         <a-descriptions :column="{md:2}">
             <a-descriptions-item label="姓名" >
                 王用友
