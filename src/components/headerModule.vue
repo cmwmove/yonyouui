@@ -11,10 +11,10 @@
                     <a class="ant-dropdown-link" @click="e => e.preventDefault()">规范2.0<i class="iconfont iconxia"></i></a>
                     <a-menu slot="overlay">
                         <a-menu-item key="0">
-                            <a>规范1.0</a>
+                            <a @click="normClick">规范1.0</a>
                         </a-menu-item>
                         <a-menu-item key="1">
-                            <a>规范2.0</a>
+                            <a @click="normClick2">规范2.0</a>
                         </a-menu-item>
                     </a-menu>
                 </a-dropdown>
@@ -41,6 +41,12 @@ export default {
      methods:{
         addClass:function(index){
             this.current=index;
+        },
+        normClick(){
+            this.$router.push("/Standard")
+        },
+        normClick2(){
+            this.$router.push("/Letter")
         }
     }
 }
@@ -48,13 +54,18 @@ export default {
 
 <style lang="less">
 .header-top{
-    height: 76px;
+    height: 60px;
     padding: 0 30px 0 40px;
     font-family: AlibabaPuHuiTi-Regular, AlibabaPuHuiTi;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #DDDDDD;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
 
     .header-right{
 
@@ -71,27 +82,27 @@ export default {
         }
         .headerLeft-title{
             padding: 0 21px;
-            height: 76px;
+            height: 60px;
             margin: 0 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;  
+            font-size: 16px;  
         }
         .headerLeft-titleR{
             padding: 0 21px;
-            height: 76px;
+            height: 60px;
             margin: 0 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;
+            font-size: 16px;
 
             .anticon{
                 margin-left: 10px;
             }
             .ant-dropdown-link{
-                font-size: 18px;
+                font-size: 16px;
             }
         }
         #headerLeft-color{

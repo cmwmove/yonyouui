@@ -1,3 +1,154 @@
+// 字号
+@font-size-base: 14px;
+@font-size-lg: @font-size-base + 2px;
+@font-size-sm: 12px;
+// 标准白
+@white: #ffffff;
+//标准蓝
+@blue-6: #0066ff;
+@blue-color-hover: #3384ff;
+@blue-color-active: #0051cc;
+//淡蓝
+@lblue-6: #0099ff;
+@lblue-color-hover: #33adff;
+@lblue-color-active: #007acc;
+//标准红
+@red1-6: #cc0000;
+@red1-color-hover: #d63333;
+@red1-color-active: #a30000;
+//标准棕
+@brown-6: #996600;
+@brown-color-hover: #ad8433;
+@brown-color-active: #7a5100;
+//标准橙
+@orange-6: #ff6633;
+@orange-color-hover: #ff845b;
+@orange-color-active: #cc5128;
+//橘黄金
+@gold-6: #ff9933;
+@gold-color-hover: #ffad5b;
+@gold-color-active: #cc7a28;
+//标准绿
+@green1-6: #339900;
+@green1-color-hover: #5bad33;
+@green1-color-active: #287a00;
+//淡绿
+@lgreen-6: #33cc99;
+@lgreen-color-hover: #5bd6ad;
+@lgreen-color-active: #28a37a;
+//青
+@cyan-6: #009999;
+@cyan-color-hover: #33adad;
+@cyan-color-active: #007a7a;
+
+// 主色调red
+@primary-color: @blue-6;
+@primary-color-hover: @lblue-color-hover;
+@primary-color-active: @lblue-color-active;
+
+// @primary-color: @red1-6;
+// @primary-color-hover: @red1-color-hover;
+// @primary-color-active: @red1-color-active;
+
+//文字黑
+@text-color: #333333;
+// 次文本色
+@text-color-secondary: #888888;
+// 禁用背景颜色
+@dis-color-back: #eeeeee;
+// 失效色
+@disabled-color: rgba(0, 0, 0, 0.25);
+// 禁用文字、边框颜色
+@disabled-color: #aaaaaa;
+// 边框色
+@border-color-base: #888888;
+//按钮边框灰
+@border-color: #888888;
+// 输入框颜色
+@input-border-color: #bbbbbb;
+// 下拉框边框
+@border-color-dropdown: #777777;
+// 浮层阴影
+// @box-shadow-base: none;
+
+
+// 折叠面板
+// 横向面板
+.zedieborder{
+    box-shadow: 0 0 5px #bbbbbb;
+    width: 868px;
+    border-radius: 4px;
+
+    .collapseone{
+        height: 36px;
+        width: 868px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        border-left: 2px solid @primary-color;
+        padding: 0 15px;
+        border-radius: 4px;
+    }
+    .borderBo{
+        border-radius: 4px 4px 0 0;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    .closeBox{
+        display: flex;
+        justify-content: space-around;
+        padding: 16px 40px;
+        height: 64px;
+        width: 868px;
+        border: 1px solid #dddddd;
+        border-top: none;
+        border-radius: 4px;
+    }
+
+    .trans{
+        transform: rotate(180deg);
+    }
+    .iconfont{
+        transition: 0.5s;
+    }
+    
+}
+
+// 竖向折叠面板
+.collaBoxTW{
+    border: 1px solid #dddddd;
+    width: 889px;
+    height: 424px;
+    display: flex;
+    align-items: center;
+
+    .leftColl{
+        height: 424px;
+        width: 260px;
+        padding: 15px 16px;
+        border-right: 1px solid #bbbbbb;
+    }
+
+    .collButton{
+        text-align: center;
+        position: relative;
+        height: 50px;
+        border-left: 16px solid #bbbbbb;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+
+        .leftbox{
+            position: absolute;
+            left: -14px;
+            top: 6px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+
 // 分页组件
 .pags{
     margin-top: 12px;
@@ -27,16 +178,20 @@
             -ms-user-select: none;
             user-select: none;
 
-        // .all{
-        //     display: block;
-        //     height: 100%;
-        //     font-size: 12px;
-        //     text-align: center;
-        //     background-color: #fff;
-        //     // border: 1px solid #888888;
-        //     outline: none;
-        //     transition: all 0.3s;
-        // }
+        .all{
+            display: block;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            color: #333333;
+            background-color: #fff;
+            // border: 1px solid #888888;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .all:hover{
+            color:#cc0000
+        }
     }
 
     // 标准禁止分页
@@ -62,8 +217,8 @@
             text-align: center;
             outline: none;
             transition: all 0.3s;
-            color: #888888;
-            background: #f5f5f5;
+            color: #aaaaaa;
+            background: #eeeeee;
             cursor: not-allowed;
         }
     }
@@ -113,6 +268,7 @@
             text-align: center;
             background-color: #fff;
             outline: none;
+            color: #888888;
             transition: all 0.3s;
         }
     }
@@ -140,8 +296,8 @@
             text-align: center;
             outline: none;
             transition: all 0.3s;
-            color: #888888;
-            background: #f5f5f5;
+            color: #aaaaaa;
+            background: #eeeeee;
             cursor: not-allowed;
         }
     }
@@ -170,16 +326,9 @@
     margin: 0 10px !important;
     background-color: #f5f5f5 !important;
 }
-.button{
-    width: 40px !important;
-    height: 32px !important;
-    padding: 0 !important;
-}
+
 .buttonBas{
-    width: 40px !important;
-    height: 32px !important;
-    background-color: #f5f5f5 !important;
-    padding: 0 !important;
+    background-color: #eeeeee !important;
 }
 // 输入框（只读输入框）
 input.readinput.ant-input {
@@ -187,11 +336,7 @@ input.readinput.ant-input {
 }
 
 
-// 卡片前端方块
-.fangkuai{
-    margin-right: 10px;
-    color: #cc0000;
-}
+
 // 图标卡片居中
 .cardicon{
     width: 50px;
@@ -199,7 +344,7 @@ input.readinput.ant-input {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #cc0000;
+    background-color: @primary-color;
     border-radius: 25px;
     color: #fff;
 

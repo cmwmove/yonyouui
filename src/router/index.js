@@ -28,6 +28,106 @@ const routes = [
         name:'DesignTenet',
         component:() => import('../views/guideArc/designTenet.vue')
       },
+      {//间距
+        path:'/Spacing',
+        name:'Spacing',
+        component:() => import('../views/guideArc/spacing.vue')
+      },
+      {//对齐
+      path:'/Align',
+        name:'Align',
+      component:() => import('../views/guideArc/align.vue')
+      },
+      {//对比
+      path:'/Contrast',
+        name:'Contrast',
+      component:() => import('../views/guideArc/contrast.vue')
+      },
+      {//重复
+      path:'/Repeat',
+        name:'Repeat',
+      component:() => import('../views/guideArc/repeat.vue')
+      },
+      {//直观
+      path:'/Visual',
+        name:'Visual',
+      component:() => import('../views/guideArc/visual.vue')
+      },
+      {//弹出
+      path:'/Eject',
+        name:'Eject',
+      component:() => import('../views/guideArc/eject.vue')
+      },
+      {//过渡动画
+      path:'/TransitionOn',
+        name:'TransitionOn',
+      component:() => import('../views/guideArc/transitionOn.vue')
+      },
+      {//及时反馈
+      path:'/ReactionOn',
+        name:'ReactionOn',
+      component:() => import('../views/guideArc/reactionOn.vue')
+      },
+      {//按钮命名
+      path:'/ButtonName',
+        name:'ButtonName',
+      component:() => import('../views/guideArc/buttonName.vue')
+      },
+      {//设计原则颜色
+      path:'/Color',
+        name:'Color',
+      component:() => import('../views/guideArc/color.vue')
+      },
+      {//设计原则字体
+      path:'/Font',
+        name:'Font',
+      component:() => import('../views/guideArc/font.vue')
+      },
+      {//设计原则图标
+      path:'/IconDesign',
+        name:'IconDesign',
+      component:() => import('../views/guideArc/iconDesign.vue')
+      },
+      {//设计原则布局
+      path:'/Layout',
+        name:'Layout',
+      component:() => import('../views/guideArc/layout.vue')
+      },
+      {//登录页
+      path:'/LoginPage',
+        name:'LoginPage',
+      component:() => import('../views/guideArc/loginPage.vue')
+      },
+      {//门户首页
+      path:'/PortalIndex',
+        name:'PortalIndex',
+      component:() => import('../views/guideArc/portalIndex.vue')
+      },
+      {//菜单
+      path:'/Menu',
+        name:'Menu',
+      component:() => import('../views/guideArc/menu.vue')
+      },
+      {//功能展开
+      path:'/Function',
+        name:'Function',
+      component:() => import('../views/guideArc/function.vue')
+      },
+      {//门户选项卡
+      path:'/PortalTabs',
+        name:'PortalTabs',
+      component:() => import('../views/guideArc/portalTabs.vue')
+      },
+      {//政务客服
+      path:'/CustomerService',
+        name:'CustomerService',
+      component:() => import('../views/guideArc/customerService.vue')
+      },
+      {//模块
+      path:'/Modular',
+        name:'Modular',
+      component:() => import('../views/guideArc/modular.vue')
+      },
       
       // {//
       //   path:'/',
@@ -220,6 +320,23 @@ const routes = [
     component:() => import('../views/resource'),
     
   },
+  {//规范一
+    path:"/Standard",
+    // name:"Standard",
+    component:() => import('../view1.0/standard.vue'),
+    children:[
+      {
+        path:'/Adaptation',
+        name:'Adaptation',
+        component:() => import('../view1.0/standardContent/adaptation.vue'),
+      },
+      // {//介绍
+      //   path:'/Introduce',
+      //   name:'Introduce',
+      //   component:() => import('../views/guideArc/introduce.vue')
+      // },
+    ]
+  }
 ]
 
 

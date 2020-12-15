@@ -139,7 +139,7 @@
                         <div class="spantitle">上</div>
                         <div style="width: 500px">
                             <a-tabs
-                            default-active-key="1"
+                            :default-active-key="1"
                             tab-position=top
                             >
                             <a-tab-pane v-for="i in 4" :key="i" :tab="`页签样式${i}`">  </a-tab-pane>
@@ -148,7 +148,7 @@
                         <div class="spantitle">下</div>
                         <div style="width: 500px">
                             <a-tabs
-                            default-active-key="1"
+                            :default-active-key="1"
                             tab-position=bottom
                             >
                             <a-tab-pane v-for="i in 4" :key="i" :tab="`页签样式${i}`">  </a-tab-pane>
@@ -157,7 +157,7 @@
                         <div class="spantitle">左</div>
                         <div style="width: 250px">
                             <a-tabs
-                            default-active-key="1"
+                            :default-active-key="1"
                             tab-position=left
                             >
                             <a-tab-pane v-for="i in 4" :key="i" :tab="`页签样式${i}`">  </a-tab-pane>
@@ -166,7 +166,7 @@
                         <div class="spantitle">右</div>
                         <div style="width: 500px">
                             <a-tabs
-                            default-active-key="1"
+                            :default-active-key="1"
                             tab-position=right
                             >
                             <a-tab-pane v-for="i in 4" :key="i" :tab="`页签样式${i}`">  </a-tab-pane>
@@ -212,21 +212,6 @@
                         <!-- Content of Tab Pane 3 -->
                         </a-tab-pane>
                     </a-tabs>
-                     <a-tabs type="editable-card">
-                        <a-tab-pane key="1" tab="页面当前效果">
-                        <!-- Content of Tab Pane 1 -->
-                        </a-tab-pane>
-                        <a-tab-pane key="2" tab="页签样式一">
-                        <!-- Content of Tab Pane 2 -->
-                        </a-tab-pane>
-                        <a-tab-pane key="3" tab="页签样式一">
-                        <!-- Content of Tab Pane 3 -->
-                        </a-tab-pane>
-                    </a-tabs>
-                    <div style="margin:20px 0 10px 0;">关闭样式</div>
-                    <div>
-                        <Tabsone></Tabsone>
-                    </div>
                     
                 </div>
             </div>
@@ -237,7 +222,7 @@
 
 <script>
 import Changes from '@/components/changes.vue'
-import Tabsone from '@/components/tabsone.vue'
+import Tabsone from '@/components/module/tabsone.vue'
 
 export default {
     data(){

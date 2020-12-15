@@ -60,6 +60,7 @@
                         <a-breadcrumb-item><a href="">层级标题</a></a-breadcrumb-item>
                         <a-breadcrumb-item>
                             <a href="">层级标题</a>
+                            <icon-font slot="suffixIcon" type="iconxiajiantou" />
                             <a-menu slot="overlay">
                                 <a-menu-item><a target="_blank">层级子标题</a></a-menu-item>
                                 <a-menu-item><a target="_blank">层级子标题</a></a-menu-item>
@@ -79,14 +80,6 @@
 <script>
 import Changes from '@/components/changes.vue'
 export default {
-//     created () {
-//     document.title = '面包屑'
-//   },
-//   mounted() {
-//     axios.get('***').then((d)=>{
-//    document.title = '面包屑('+ d.Name + ')'
-//     })
-//   },
     data(){
         return{
             title1 : '图标',

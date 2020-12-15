@@ -29,7 +29,7 @@
                         </div>
                         
                     </div>
-                    <div class="styleBox Box">
+                    <!-- <div class="styleBox Box">
                         <span  class="BoxSpan">2.按钮单选框</span>
                         <div>
                             <div>样式1：
@@ -48,14 +48,11 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <h1 class="margin-top40">单选框尺寸</h1>
+            <!-- <h1 class="margin-top40">单选框尺寸</h1>
             <div class="intrduce">
-                <!-- <p>单选框由标签+单选项组成。</p>
-                <p>◆标准单选框：建议每个选项最多不能超过6个字，标签和内容文字为14px。参照内容距左8px。不固定每个但选择的宽度，但是每个单选组之间的间距最小不能小于等于20px。</p>
-                <p>◆按钮式单选框：常见的两字按钮的固定宽度为72px，高度32px，其他字数的按钮宽度同多字按钮规范，固定左右间距为16px，不规定按钮宽度。标签和内容文字为14px。</p> -->
             </div>
             <div class="margin-top20">
                 <div class="Box sizeBox">
@@ -104,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <h1 class="margin-top40">单选框状态</h1>
             <div class="intrduce">
                 <p>单选框状态一般分为空状态、激活状态、禁用状态。</p>

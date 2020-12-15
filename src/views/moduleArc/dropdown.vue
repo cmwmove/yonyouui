@@ -43,6 +43,7 @@
                     <div class="DropBox">
                         <span>下拉选择：</span>
                         <a-select placeholder="选择内容" style="width: 220px">
+                            <icon-font slot="suffixIcon" type="iconxiajiantou" />
                             <a-select-option value="1">选项卡一</a-select-option>
                             <a-select-option value="2">已选择选项卡</a-select-option>
                             <a-select-option value="3" disabled>禁止选择</a-select-option>
@@ -56,16 +57,8 @@
                     <span>下拉搜索</span>
                     <div class="DropBox">
                         <span>下拉选择：</span>
-                        <!-- <a-select placeholder="选择内容" style="width: 220px">
-                            <a-select-option value=""><a-input-search placeholder="搜索内容"></a-input-search></a-select-option>
-                            <a-select-option value="2">a1</a-select-option>
-                            <a-select-option value="3">a2</a-select-option>
-                            <a-select-option value="4">b1</a-select-option>
-                            <a-select-option value="5">b2(鼠标经过)</a-select-option>
-                            <a-select-option value="6">b3</a-select-option>
-                            
-                        </a-select> -->
                         <a-select show-search placeholder="选择内容" option-filter-prop="children" style="width: 220px" :filter-option="filterOption" >
+                            <icon-font slot="suffixIcon" type="iconxiajiantou" />
                             <a-select-option value="2">a1</a-select-option>
                             <a-select-option value="3">a2</a-select-option>
                             <a-select-option value="4">b1</a-select-option>

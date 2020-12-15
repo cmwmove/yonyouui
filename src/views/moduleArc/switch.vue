@@ -39,7 +39,7 @@
                 <div class="switchBox Box">
                     <span class="titleSpan">3.禁用状态</span>
                     <div class="swbox">
-                        <a-switch checked-children="开" disabled un-checked-children="关" :default-checked="false" style="margin: 0 50px 0 75px;"/>
+                        <a-switch checked-children="开" disabled un-checked-children="关" :default-checked="false" style="margin: 0 50px 0 70px;"/>
                         <a-switch checked-children="开" disabled un-checked-children="关" default-checked />
                         <!-- <a-switch :default-checked="false" disabled/> -->
                         <!-- <a-switch default-checked disabled/> -->

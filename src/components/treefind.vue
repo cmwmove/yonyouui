@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-input-search style="margin-bottom: 8px" placeholder="Search" @change="onChange" />
+    <a-input-search style="margin-bottom: 8px" placeholder="查找" @change="onChange" />
     <a-tree
       :expanded-keys="expandedKeys"
       :auto-expand-parent="autoExpandParent"

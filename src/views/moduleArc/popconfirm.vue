@@ -21,8 +21,7 @@
                         @confirm="confirm"
                         @cancel="cancel"
                     >
-                        <!-- <a-icon slot="icon" type=""/> -->
-                        <a href="#">删除</a>
+                        <a href="#" class="popconA">删除</a>
                     </a-popconfirm>
                 </div>
             </div>
@@ -37,7 +36,7 @@
                         @cancel="cancel"
                     >
                         <a-icon slot="icon" type="question-circle-o" style="color: red" />
-                        <a href="#">删除</a>
+                        <a href="#" class="popconA">删除</a>
                     </a-popconfirm>
                 </div>
             </div>
@@ -175,7 +174,7 @@ export default {
     padding: 124px 0 20px 120px; */
     width: 72px;
     padding: 5px 21px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 #components-a-popconfirm-demo-placement .ant-btn {
   width: 70px;
@@ -189,5 +188,8 @@ export default {
     border: 1px solid #dddddd;
     width: 510px;
     padding: 40px 64px;
+}
+.popconA{
+  color: #333333;
 }
 </style>

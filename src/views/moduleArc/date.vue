@@ -18,17 +18,17 @@
                     <div class="datebox">
                         <span class="dataspan">标准日期选择</span>
                         <div>
-                            <a-date-picker />
+                            <a-date-picker><icon-font slot="suffixIcon" type="iconrili" /></a-date-picker>
                         </div>
                         <div class="margin-top40">
-                            <a-date-picker :default-value="moment('2015-06-06', dateFormat)" disabled />
+                            <a-date-picker :default-value="moment('2015-06-06', dateFormat)" disabled ><icon-font slot="suffixIcon" type="iconrili" /></a-date-picker>
                         </div>
                     </div>
                     <div class="datebox">
                         <span class="dataspan">组合日期选择</span>
-                        <div><a-range-picker /></div>
+                        <div><a-range-picker><icon-font slot="suffixIcon" type="iconrili" /></a-range-picker></div>
                         <div class="margin-top40">
-                            <a-range-picker :default-value="[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]" disabled />
+                            <a-range-picker :default-value="[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]" disabled><icon-font slot="suffixIcon" type="iconrili" /></a-range-picker>
                         </div>
                     </div>
                 <!-- </div> -->

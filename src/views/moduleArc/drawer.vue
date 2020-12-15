@@ -73,10 +73,10 @@
 
 <script>
 import Changes from '@/components/changes.vue'
-import Draweront from '@/components/draweront.vue'
-import DrawerTwo from '@/components/drawerTwo.vue'
-import Drawerthree from '@/components/drawerthree.vue'
-import Drawerfour from '@/components/drawerfour.vue'
+import Draweront from '@/components/module/draweront.vue'
+import DrawerTwo from '@/components/module/drawerTwo.vue'
+import Drawerthree from '@/components/module/drawerthree.vue'
+import Drawerfour from '@/components/module/drawerfour.vue'
 
 export default {
     data(){

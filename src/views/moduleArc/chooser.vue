@@ -23,6 +23,7 @@
                         <div>
                             <span>下拉选择：</span>
                             <a-select placeholder="选择内容" style="width: 220px">
+                                <icon-font slot="suffixIcon" type="iconxiajiantou" />
                                 <a-select-option value="1">选项卡一</a-select-option>
                                 <a-select-option value="2">已选择选项卡</a-select-option>
                                 <a-select-option value="3" disabled>禁止选择</a-select-option>
@@ -35,7 +36,7 @@
                         <span class="choSpan">2.地区选择器</span>
                         <div>
                             <span>连级选择：</span>
-                            <a-cascader :options="options" placeholder="请选择" change-on-select />
+                            <a-cascader :options="options" placeholder="请选择" change-on-select ><icon-font slot="suffixIcon" type="iconxiajiantou" /></a-cascader>
                         </div>
                     </div>
                 </div>

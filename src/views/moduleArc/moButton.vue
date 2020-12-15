@@ -2,19 +2,16 @@
 <!-- 按钮界面 -->
     <div class="rightBox container">
         <div class="Content">
-            <!-- <div class="Title">按钮</div> -->
             <h1>按钮</h1>
             <div class="Details">按钮用于开始一个即时操作。用户通过点击按钮唤起某事件或对某事件作出判断。</div>
         </div>
         <div class="Content">
-            <!-- <div class="Title">何时使用</div> -->
             <h1>何时使用</h1>
             <div class="Details">标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。通常且不限于用于对弹框、表单、表格、卡片、工具栏、操作栏等控件的操作。</div>
         </div>
 
         <!-- 按钮类型框 -->
         <div class="Content">
-            <!-- <div class="Title">按钮类型</div> -->
             <h1>按钮类型</h1>
             <div class="Details">按钮有七种类型：主按钮、次按钮、辅助按钮、下拉按钮、图标按钮、开关按钮和链接按钮。主按钮在同一个操作区域最多出现一次。</div>
             <div style="width:916px;">
@@ -87,11 +84,10 @@
 
         <!-- 不同尺寸按钮 -->
         <div class="Content">
-            <!-- <div class="Title">不同尺寸按钮</div> -->
             <h1>不同尺寸按钮</h1>
             <div class="Details">按钮有大，中，小三种尺寸。</div>
             <div class="sizeButtonBox">
-                <div class="sizeButtonBox-size">
+                <!-- <div class="sizeButtonBox-size">
                     <div class="sizeButtonBox-sizeButton">
                         <div>
                             <div class="sizeButtonBox-sizeTitle">大按钮</div>
@@ -101,7 +97,7 @@
                         </div>
                     </div>
                     
-                </div>
+                </div> -->
                 <div class="sizeButtonBox-size">
                     
                     <div class="sizeButtonBox-sizeButton">
@@ -243,10 +239,10 @@ export default {
 
 .sizeButtonBox{
     margin-top: 17px;
-    padding: 53px 38px;
+    padding: 53px 38px 5px;
     border: 1px solid #DDDDDD;
     width: 917px;
-    height: 450px;
+    // height: 450px;
 
     .sizeButtonBox-sizeTitle{
         display: inline-block;

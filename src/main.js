@@ -8,6 +8,8 @@ import "./style/module.less";
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 
+import { Icon } from 'ant-design-vue';
+
 // import zhZN from 'antd/es/locale/zh_CN'
 // import {ConfigProvider,Table} from 'antd'
 
@@ -15,6 +17,26 @@ import "./static/reset.less";
 
 // 阿里iconfont
 import './assets/fonts/iconfont/iconfont.css'
+import iconFont from './assets/fonts/iconfont/iconfont.js'
+const IconFont = Icon.createFromIconfontCN({
+  scriptUrl: iconFont
+  // scriptUrl: '//at.alicdn.com/t/font_1389343_cxas4kuody.js'
+})
+Vue.component('IconFont',IconFont)
+
+// export default IconFont;
+
+
+// const MyIcon = Icon.createFromIconfontCN({
+//   scriptUrl: '//at.alicdn.com/t/font_1389343_cxas4kuody.js', // 在 iconfont.cn 上生成
+// });
+// new Vue({
+//   el: '#app',
+//   components: {
+//     'my-icon': MyIcon,
+//   },
+//   template: '<my-icon type="icon-example" />',
+// });
 
 
 Vue.use(Antd);

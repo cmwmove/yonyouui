@@ -41,7 +41,7 @@
                                 <li class="allleftdis pagleft">
                                     <a class="all"><i class="iconfont iconxiangzuo"></i></a>
                                 </li>
-                                <li class="alllefts"><a-pagination v-model="current" :total="50" disabled show-less-items /></li>
+                                <li class="alllefts"><a-pagination :total="50" disabled show-less-items /></li>
                                 <li class="allleftdis pagright">
                                     <a class="all" ><i class="iconfont iconxiangyou"></i></a>
                                 </li>
@@ -155,7 +155,7 @@
                             </li>
                             <li class="pagsnumber">
                                 <a-input-number class="paginput" id="inputNumber" v-model="value" :min="1" :max="100" />
-                                <a-button class="button">确定</a-button>
+                                <a-button>确定</a-button>
                             </li>
                         </ul>
                     </div>

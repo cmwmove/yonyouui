@@ -28,7 +28,11 @@
                         <div>
                             <div style="margin-left:55px;">
                                 <span>下拉选择：</span>
+                                <!-- <icon-font slot="suffixIcon" type="iconAPIshuru" /> -->
+                                
                                 <a-select placeholder="选择内容" style="width: 220px">
+                                    <!-- <i class="iconfont iconAPIshuru"></i> -->
+                                    <icon-font slot="suffixIcon" type="iconxiajiantou" />
                                     <a-select-option value="1">选项卡一</a-select-option>
                                     <a-select-option value="2">已选择选项卡</a-select-option>
                                     <a-select-option value="3" disabled>禁止选择</a-select-option>
@@ -38,7 +42,9 @@
                             </div>
                             <div class="margin-top20">
                                 <span>点击弹出参照选项：</span>
-                                <a-date-picker style="width:220px;"/>
+                                <a-date-picker style="width:220px">
+                                    <icon-font slot="suffixIcon" type="iconzhongdianxiangmu" />
+                                </a-date-picker>
                             </div>
                             
                         </div>
@@ -48,14 +54,19 @@
                     <div class="Box inputBox1-1">
                         <span class="titleSpan">3.搜索框</span>
                         <div>
-                            <a-input-search placeholder="搜索内容" style="width: 220px"/>
+                            <!-- <a-input-search placeholder="搜索内容" style="width: 220px"/> -->
+                            <a-input-search placeholder="搜索内容" style="width: 220px">
+                                <icon-font slot="suffixIcon" type="iconrili" />
+                                <!-- <i class="iconfont iconrili"></i> -->
+                            </a-input-search><i class="iconfont iconrili"></i>
                         </div>
                     </div>
                     <div class="Box inputBox1-1">
                         <span class="titleSpan">4.密码框</span>
                         <div>
                             <span>密码：</span>
-                            <a-input-password placeholder="输入密码" style="width:220px;"/>
+                            <!-- <a-input-password placeholder="输入密码" style="width:220px;"/> -->
+                            <a-input-password placeholder="输入密码" style="width:220px;"><icon-font slot="suffixIcon" type="iconchakan" /></a-input-password>
                         </div>
                     </div>
                     <div class="Box inputBox1-1">
@@ -76,7 +87,6 @@
                         <span class="titleSpan">7.只读输入框</span>
                         <div>
                             <a-input class="readinput" value="只读内容" readOnly/>
-                            <!-- <input type="text" value="只读内容" readonly="readonly"> -->
                         </div>
                     </div>
                     <div class="Box inputBox1-1">

@@ -62,9 +62,9 @@
 
 <script>
 import Changes from '@/components/changes.vue'
-import Popupone from '@/components/popupone.vue'
-import PopupTwo from '@/components/popupTwo.vue'
-import PopupThree from '@/components/popupThree.vue'
+import Popupone from '@/components/module/popupone.vue'
+import PopupTwo from '@/components/module/popupTwo.vue'
+import PopupThree from '@/components/module/popupThree.vue'
 
 export default {
     data(){

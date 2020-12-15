@@ -10,29 +10,29 @@
                 <a-menu-item :key="'/Dropdown'"><router-link to="Dropdown">下拉菜单</router-link></a-menu-item>
                 <a-menu-item :key="'/Pagination'"><router-link to="Pagination">分页</router-link></a-menu-item>
                 <a-menu-item :key="'/Steps'"><router-link to="Steps">步骤条</router-link></a-menu-item>
-                <a-menu-item key="/Checkbox"><router-link to="Checkbox"></router-link>多选框</a-menu-item>
-                <a-menu-item key="/RadioButton"><router-link to="RadioButton"></router-link>单选框</a-menu-item>
-                <a-menu-item key="/Chooser"><router-link to="Chooser"></router-link>选择器</a-menu-item>
-                <a-menu-item key="/Date"><router-link to="Date"></router-link>日期</a-menu-item>
-                <a-menu-item key="/Form"><router-link to="Form"></router-link>表单</a-menu-item>
-                <a-menu-item key="/InputBox"><router-link to="InputBox"></router-link>输入框</a-menu-item>
-                <a-menu-item key="/Switch"><router-link to="Switch"></router-link>开关</a-menu-item>
-                <a-menu-item key="/Tree"><router-link to="Tree"></router-link>树</a-menu-item>
-                <a-menu-item key="/Transfer"><router-link to="Transfer"></router-link>穿梭框</a-menu-item>
-                <a-menu-item key="/Collapse"><router-link to="Collapse"></router-link>折叠面板</a-menu-item>
-                <a-menu-item key="/Card"><router-link to="Card"></router-link>卡片</a-menu-item>
-                <a-menu-item key="/Descriptions"><router-link to="Descriptions"></router-link>描述列表</a-menu-item>
-                <a-menu-item key="/Empty"><router-link to="Empty"></router-link>缺省图</a-menu-item>
-                <a-menu-item key="/Popconfirm"><router-link to="Popconfirm"></router-link>气泡提醒</a-menu-item>
-                <a-menu-item key="/Tag"><router-link to="Tag"></router-link>标签</a-menu-item>
-                <a-menu-item key="/Alert"><router-link to="Alert"></router-link>警告提示</a-menu-item>
-                <a-menu-item key="/Drawer"><router-link to="Drawer"></router-link>抽屉</a-menu-item>
-                <a-menu-item key="/Spin"><router-link to="Spin"></router-link>加载中</a-menu-item>
-                <a-menu-item key="/Notification"><router-link to="Notification"></router-link>通知提醒</a-menu-item>
-                <a-menu-item key="/Tabs"><router-link to="Tabs"></router-link>页签</a-menu-item>
-                <a-menu-item key="/Chart"><router-link to="Chart"></router-link>图标</a-menu-item>
-                <a-menu-item key="/Popup"><router-link to="Popup"></router-link>弹框</a-menu-item>
-                <a-menu-item key="/Tooltip"><router-link to="Tooltip"></router-link>文字提示</a-menu-item>
+                <a-menu-item key="/Checkbox"><router-link to="Checkbox">多选框</router-link></a-menu-item>
+                <a-menu-item key="/RadioButton"><router-link to="RadioButton">单选框</router-link></a-menu-item>
+                <a-menu-item key="/Chooser"><router-link to="Chooser">选择器</router-link></a-menu-item>
+                <a-menu-item key="/Date"><router-link to="Date">日期</router-link></a-menu-item>
+                <a-menu-item key="/Form"><router-link to="Form">表单</router-link></a-menu-item>
+                <a-menu-item key="/InputBox"><router-link to="InputBox">输入框</router-link></a-menu-item>
+                <a-menu-item key="/Switch"><router-link to="Switch">开关</router-link></a-menu-item>
+                <a-menu-item key="/Tree"><router-link to="Tree">树</router-link></a-menu-item>
+                <a-menu-item key="/Transfer"><router-link to="Transfer">穿梭框</router-link></a-menu-item>
+                <a-menu-item key="/Collapse"><router-link to="Collapse">折叠面板</router-link></a-menu-item>
+                <a-menu-item key="/Card"><router-link to="Card">卡片</router-link></a-menu-item>
+                <a-menu-item key="/Descriptions"><router-link to="Descriptions">描述列表</router-link></a-menu-item>
+                <a-menu-item key="/Empty"><router-link to="Empty">缺省图</router-link></a-menu-item>
+                <a-menu-item key="/Popconfirm"><router-link to="Popconfirm">气泡提醒</router-link></a-menu-item>
+                <a-menu-item key="/Tag"><router-link to="Tag">标签</router-link></a-menu-item>
+                <a-menu-item key="/Alert"><router-link to="Alert">警告提示</router-link></a-menu-item>
+                <a-menu-item key="/Drawer"><router-link to="Drawer">抽屉</router-link></a-menu-item>
+                <a-menu-item key="/Spin"><router-link to="Spin">加载中</router-link></a-menu-item>
+                <a-menu-item key="/Notification"><router-link to="Notification">通知提醒</router-link></a-menu-item>
+                <a-menu-item key="/Tabs"><router-link to="Tabs">页签</router-link></a-menu-item>
+                <!-- <a-menu-item key="/Chart"><router-link to="Chart">图表</router-link></a-menu-item> -->
+                <a-menu-item key="/Popup"><router-link to="Popup">弹框</router-link></a-menu-item>
+                <a-menu-item key="/Tooltip"><router-link to="Tooltip">文字提示</router-link></a-menu-item>
             </a-sub-menu>
         </a-menu>
     </div>
@@ -89,5 +89,10 @@ export default {
 .mLeftNav{
     display: inline-block;
     font-size: 18px;
+    height: 90%;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 56px;
 }
 </style>

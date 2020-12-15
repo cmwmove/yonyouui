@@ -37,12 +37,6 @@
                     <Transferfind></Transferfind>
                 </div>
             </div>
-            <h1 class="margin-top40">表格穿梭框</h1>
-            <div class="margin-top20">
-                <div class="transferBox">
-                    <TransferfindT></TransferfindT>
-                </div>
-            </div>
             <h1 class="margin-top40">空状态</h1>
             <div class="margin-top20">
                 <div class="transferBox">
@@ -56,9 +50,8 @@
 
 <script>
 import Changes from '@/components/changes.vue'
-import Transferfind from '@/components/transferfind.vue'
-import TransferfindT from '@/components/transferfindT.vue'
-import TransferfindTr from '@/components/transferfindTr.vue'
+import Transferfind from '@/components/module/transferfind.vue'
+import TransferfindTr from '@/components/module/transferfindTr.vue'
 
 export default {
     data(){
@@ -88,7 +81,6 @@ export default {
     components:{
         Changes,
         Transferfind,
-        TransferfindT,
         TransferfindTr
     },
     methods: {

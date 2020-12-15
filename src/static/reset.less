@@ -44,13 +44,13 @@
 @cyan-color-active: #007a7a;
 
 // 主色调red
-@primary-color: @red1-6;
-@primary-color-hover: @red1-color-hover;
-@primary-color-active: @red1-color-active;
+@primary-color: @blue-6;
+@primary-color-hover: @lblue-color-hover;
+@primary-color-active: @lblue-color-active;
 
-// @primary-color: @blue-6;
-// @primary-color-hover: @blue-color-hover;
-// @primary-color-active: @blue-color-active;
+// @primary-color: @red1-6;
+// @primary-color-hover: @red1-color-hover;
+// @primary-color-active: @red1-color-active;
 
 //文字黑
 @text-color: #333333;
@@ -64,8 +64,10 @@
 @disabled-color: #aaaaaa;
 // 边框色
 @border-color-base: #888888;
-//按钮、输入框边框灰
+//按钮边框灰
 @border-color: #888888;
+// 输入框颜色
+@input-border-color: #bbbbbb;
 // 下拉框边框
 @border-color-dropdown: #777777;
 // 浮层阴影
@@ -144,6 +146,7 @@
 // 链接按钮
 .ant-btn-link {
   color: @primary-6;
+  // color: @primary-color;
   border: none;
 }
 
@@ -151,15 +154,20 @@
 .ant-btn-icon-only {
   padding: 0;
 }
-
+// 输入框宽度
+.ant-input{
+  width: 220px;
+}
 // 下拉框
 .ant-dropdown-menu,
 .ant-select-dropdown-menu {
-  border: 1px solid @border-color-dropdown;
+  border: 1px solid @input-border-color;
   border-radius: 4px;
   color: @text-color;
 }
-
+.ant-select-selection{
+  border: 1px solid @input-border-color;
+}
 // 下拉框文字
 .ant-dropdown-menu-item {
   color: @text-color;
@@ -175,6 +183,31 @@
 // 下拉框选中文字背景
 .ant-dropdown-menu-item:hover {
   background-color: fade(@primary-6, 10%);
+}
+
+// 左侧导航栏  默认颜色是#cc0000不改变
+.ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
+  font-size: 16px;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: fade(@red1-6,5%);
+  // color: @red1-6;
+}
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
+  color: @red1-6;
+}
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
+  border-right: 3px solid @red1-6;
+}
+.ant-menu-item a:hover{
+  color: @red1-6;
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+  color: @red1-6;
+}
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before{
+  background: linear-gradient(to right, @red1-6, @red1-6);
+  // color: @red1-6;
 }
 
 // 面包屑
@@ -221,15 +254,15 @@
   border-top: none;
   padding: 4px 16px 16px 16px;
 }
-
-// 左侧导航栏
-.ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
-  font-size: 16px;
+// 地区选择器
+.ant-cascader-menus{
+  border: 1px solid @input-border-color;
+  box-shadow: none;
 }
+ 
+
 
 // 标准分页
-
-
 .ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next{
   margin: 0;
   border-radius: 0;
@@ -273,6 +306,20 @@
   color: @white;
 }
 
+// 禁用分页样式
+.ant-pagination.ant-pagination-disabled .ant-pagination-item-active{
+  border-color: #888888;
+  background-color: #eeeeee;
+}
+.ant-pagination.ant-pagination-disabled .ant-pagination-item-active a{
+  color: #aaaaaa;
+}
+.ant-pagination.ant-pagination-disabled .ant-pagination-item{
+  background-color: #eeeeee !important;
+}
+.ant-pagination.ant-pagination-disabled .ant-pagination-item-link, .ant-pagination.ant-pagination-disabled .ant-pagination-item-link:hover, .ant-pagination.ant-pagination-disabled .ant-pagination-item-link:focus{
+  background-color: #eeeeee !important;
+}
 // 步骤条
 .ant-steps-item-description{
   font-size: 12px;
@@ -317,7 +364,13 @@
   width: 240px;
   height: 300px;
 }
-
+// 日期
+.ant-calendar-picker{
+  width: 220px;
+}
+.ant-calendar{
+  border: 1px solid @input-border-color;
+}
 // 气泡提醒
 .ant-popover-message-title {
   // padding-left: 0px;
@@ -331,17 +384,34 @@
   align-items: center;
 }
 
-.ant-tag:hover{
-  background-color: @primary-color-hover;
-  color: #fff;
-}
-.ant-tag a:hover{
-  color:#fff
+
+// 卡片文字小方块
+.ant-card-body p::before {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  content: "";
+  background-color: @primary-color;
+  vertical-align: middle;
+  margin-right: 9px;
 }
 // 卡片组件
 .ant-card-actions{
   background-color: #fff;
 }
+.card-iconT{
+  display: inline-block;
+  margin-left: 5px;
+}
+// 图标卡片
+.ant-card-actions > li{
+  float: right;
+  width: 75px !important;
+}
+.ant-card-actions > li:not(:last-child) {
+  border-right: none;
+}
+
 
 // 页签
 .ant-tabs-nav .ant-tabs-tab{
@@ -386,7 +456,7 @@
 
 // 弹窗大小
 .ant-modal{
-  width: 700px !important;
+  width: 720px !important;
 }
 .place{
   padding: 0;
@@ -403,11 +473,26 @@ td > .ant-descriptions-item-label {
 .ant-descriptions-bordered .ant-descriptions-item-label, .ant-descriptions-bordered .ant-descriptions-item-content {
   padding: 9px 10px;
 }
+// 抽屉
+.ant-drawer-header{
+  padding: 16px 15px;
+}
+.ant-drawer-body{
+  padding: 24px 15px;
+}
+
 
 // 标签
 // .ant-tag-pink:hover {
 //   background-color: #ff008c;
 // }
+.ant-tag:hover{
+  background-color: @primary-color;
+  color: #fff;
+}
+.ant-tag a:hover{
+  color:#fff
+}
 .tagBlueOne:hover {
   background-color: #0066ff;
 }
@@ -477,3 +562,4 @@ td > .ant-descriptions-item-label {
   background-color: rgba(255, 0, 0, 0.1);
   border: 1px solid #FF0000;
 }
+

@@ -1,7 +1,6 @@
 <template>
     <div class="rightBox">
         <div class="container">
-
             <h1>卡片</h1>
             <div class="intrduce">
                 <p>通用卡片容器。</p>
@@ -20,15 +19,11 @@
                 <div class="box cardBoxO">
                     <a-card title="标题" style="width: 300px">
                         <a slot="extra" href="#">更多</a>
-                        <!-- <ul>
-                            <li>发卡时代峻峰卡斯比加大加肥</li>
-                            <li>第三发生的地方噶奉公守法的</li>
-                        </ul> -->
-                        <p><span class="fangkuai">■</span>干什么办法点发掘击科技部出版人</p>
-                        <p><span class="fangkuai">■</span>发十点半放假后都领刚人蔡少才那</p>
-                        <p><span class="fangkuai">■</span>发大是投入和沃个风都很高特而去</p>
-                        <p><span class="fangkuai">■</span>发给库发货了咖妃了发后付款规划</p>
-                        <p><span class="fangkuai">■</span>罚款家乐福很开放咖个卡后方可阿</p>
+                        <p>干什么办法点发掘击科技部出版人</p>
+                        <p>发十点半放假后都领刚人蔡少才那</p>
+                        <p>发大是投入和沃个风都很高特而去</p>
+                        <p>发给库发货了咖妃了发后付款规划</p>
+                        <p>罚款家乐福很开放咖个卡后方可阿</p>
                     </a-card>
                 </div>
             </div>
@@ -57,7 +52,7 @@
                 <div class="cardBoxTh box">
                     <div class="iconbox">
                         <a-card hoverable style="width: 300px">
-                            <a-card-meta title="Card title">
+                            <a-card-meta title="文字描述">
                                 <div class="cardicon" slot="avatar"><i class="iconfont iconzidingyi"></i></div>
                             </a-card-meta>
                         </a-card>
@@ -65,11 +60,10 @@
                     <div class="iconbox">
                         <a-card hoverable style="width: 300px">
                             <template slot="actions" class="ant-card-actions">
-                                <a-icon key="setting" type="setting" />
-                                <a-icon key="edit" type="edit" />
-                                <a-icon key="ellipsis" type="ellipsis" />
+                                <span><a-icon key="delete" type="delete" /><div class="card-iconT">删除</div></span>
+                                <span><a-icon key="edit" type="edit" /><div class="card-iconT">修改</div></span>
                             </template>
-                            <a-card-meta title="Card title">
+                            <a-card-meta title="文字描述">
                                 <div class="cardicon" slot="avatar"><i class="iconfont iconzidingyi"></i></div>
                             </a-card-meta>
                         </a-card>
@@ -77,11 +71,13 @@
                     <div class="iconbox">
                         <a-card hoverable style="width: 300px">
                             <template slot="actions" class="ant-card-actions">
-                                <a-icon key="setting" type="setting" />
+                                <!-- <a-icon key="setting" type="setting" />
                                 <a-icon key="edit" type="edit" />
-                                <a-icon key="ellipsis" type="ellipsis" />
+                                <a-icon key="ellipsis" type="ellipsis" /> -->
+                                <span><a-icon key="delete" type="delete" /><div class="card-iconT">删除</div></span>
+                                <span><a-icon key="edit" type="edit" /><div class="card-iconT">修改</div></span>
                             </template>
-                            <a-card-meta title="Card title" description="This is the description">
+                            <a-card-meta title="文字描述" description="文字描述文字描述文字描述">
                                 <div class="cardicon" slot="avatar"><i class="iconfont iconzidingyi"></i></div>
                             </a-card-meta>
                         </a-card>
@@ -101,18 +97,18 @@
                         :active-tab-key="noTitleKey"
                         @tabChange="key => onTabChange(key, 'noTitleKey')"
                         >
-                        <p v-if="noTitleKey === 'article'">
+                        <div v-if="noTitleKey === 'article'">
                             内容一
-                        </p>
-                        <p v-else-if="noTitleKey === 'app'">
+                        </div>
+                        <div v-else-if="noTitleKey === 'app'">
                             内容二
-                        </p>
-                        <p v-else-if="noTitleKey === 'project'">
+                        </div>
+                        <div v-else-if="noTitleKey === 'project'">
                             内容三
-                        </p>
-                        <p v-else="noTitleKey === 'fours'">
+                        </div>
+                        <div v-else="noTitleKey === 'fours'">
                             内容四
-                        </p>
+                        </div>
                         <a slot="tabBarExtraContent" href="#">更多</a>
                         </a-card>
                 </div>

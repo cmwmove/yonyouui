@@ -1,8 +1,11 @@
 <template>
   <div class="home">
     <HeaderModule></HeaderModule>
-    <ModuleLeftNav></ModuleLeftNav>
-    <router-view></router-view> 
+    <div>
+      <ModuleLeftNav></ModuleLeftNav>
+      <router-view></router-view>
+    </div>
+     
     <!-- @child-event='parentEvent' :number="NamNumber" -->
   </div>
 </template>
