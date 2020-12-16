@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-button type="primary" @click="showModal">
-      表单弹窗
+      点击弹出
     </a-button>
     <a-modal v-model="visible" title="弹窗标题" @ok="handleOk">
         <div style="width: 250px">

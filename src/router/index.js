@@ -322,19 +322,13 @@ const routes = [
   },
   {//规范一
     path:"/Standard",
-    // name:"Standard",
     component:() => import('../view1.0/standard.vue'),
     children:[
-      {
+      {//适配规则
         path:'/Adaptation',
         name:'Adaptation',
         component:() => import('../view1.0/standardContent/adaptation.vue'),
       },
-      // {//介绍
-      //   path:'/Introduce',
-      //   name:'Introduce',
-      //   component:() => import('../views/guideArc/introduce.vue')
-      // },
     ]
   }
 ]
